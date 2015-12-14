@@ -1,0 +1,248 @@
+﻿/***   Floating   ***/
+div.eBusiness .right {
+    float: right;
+}
+
+div.eBusiness .left {
+    float: left;
+}
+
+div.eBusiness .center {
+    text-align: center;
+}
+
+div.eBusiness .clearfloat {
+    clear: both;
+}
+
+div.eBusiness .newlinediv {
+    margin-top: 20px;
+}
+
+li .username {
+    font-weight: bold;
+}
+
+div.eBusiness {
+    width: 752px;
+
+    input[type="checkbox"], input[type="radio"] {
+        vertical-align: middle;
+    }
+
+    input[type="submit"], a.btn1 {
+        padding: 0 10px;
+        margin-left: 10px;
+    }
+
+    input[type="submit"].disabled {
+        background: grey;
+    }
+
+    .gradientBox {
+        margin: 8px 2px 2px 0;
+    }
+
+    .searchResults .gradientBox {
+        margin-right: 14px;
+    }
+
+    .searchResults .clearfix .spot:nth-child(3n) > .gradientBox {
+        margin-right: 0;
+    }
+    /*..errorMessageBlock { color: red;display: block;}
+	errorMessage {color: red;}	*/
+    /* Web Forms For Marketeers */
+    .scfForm {
+        padding: 0;
+
+        .scfSectionLegend {
+            margin-left: 0;
+            padding: 7px 0 8px;
+            font-size: 1.3333em;
+            font-family: Arial, sans-sarif;
+        }
+
+        .scfSingleLineGeneralPanel, .scfMultipleLineGeneralPanel, .scfDropListGeneralPanel {
+            width: 68%;
+        }
+
+        .halfAvailableWidth .scfSingleLineGeneralPanel, .halfAvailableWidth .scfMultipleLineGeneralPanel, .halfAvailableWidth .scfDropListGeneralPanel {
+            width: 34%;
+        }
+
+        .thirdAvailableWidth .scfSingleLineGeneralPanel, .thirdAvailableWidth .scfMultipleLineGeneralPanel, .thirdAvailableWidth .scfDropListGeneralPanel {
+            width: 23%;
+        }
+
+        .scfRequired {
+            float: right;
+            margin-left: 2px;
+            padding-top: 6px;
+        }
+
+        .thirdAvailableWidth .scfRequired, .halfAvailableWidth .scfRequired {
+            float: left;
+        }
+
+        .scfDateSelectorLabel, .scfCheckBoxListLabel, .scfRadioButtonListLabel {
+            font-weight: normal;
+        }
+
+        .scfSubmitButtonBorder {
+            margin: 0;
+        }
+
+        .scfSectionBorderAsFieldSet {
+            border-width: 0;
+            margin: 0 5px;
+            padding: 0 1px 15px;
+        }
+
+        label {
+            font-weight: normal;
+            padding: 2px 0 0;
+        }
+
+        .scfSingleLineTextBorder {
+            margin: 3px 0;
+        }
+    }
+
+    .error {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 100%;
+        padding: 5px;
+        background: #FFFFFF;
+        background-color: rgba(255,255,255,0.8);
+        height: 50%;
+
+        span {
+            top: 50%;
+            position: absolute;
+            width: 80%;
+            left: 20px;
+            text-align: center;
+        }
+
+        .loadProgress {
+            z-index: 200;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 100%;
+            padding: 5px;
+            background: #FFFFFF;
+            background-color: rgba(255,255,255,0.8);
+            height: 50%;
+            text-align: center;
+            background-image: url(gfx/eBusiness/ajax-loader.gif);
+        }
+    }
+    /* end web forms for marketeers */
+}
+
+.grid-24 .grid-24 div.eBusiness-wide {
+    width: 1008px;
+}
+
+.inactiveNode a {
+    color: #808080;
+}
+
+.grid-8 div.eBusiness {
+    width: auto;
+}
+
+/***   Fix for alignment on checkboxes   ***/
+div.eBusiness .checkboxAlignFix input {
+    margin-top: -1px;
+}
+
+/***   Hide and show classes   ***/
+div.eBusiness .hidden {
+    visibility: hidden;
+}
+
+div.eBusiness .visible {
+    visibility: visible;
+}
+
+/*** Remove left menu on all eBusiness pages ***/
+div.eBusiness {
+    @media print {
+        .secondNav {
+            display: none;
+        }
+    }
+}
+
+/*** Firefox fix for warranty header ***/
+div.eBusiness .newShoppingFeatures .configureForm.selectForm {
+    display: block;
+}
+
+@media print {
+    #top > .inner {
+        #eBusinessServiceNavigationWrapper, .topNavigation {
+            display: none !important;
+        }
+    }
+
+    div.eBusiness {
+        position: relative !important;
+    }
+
+    #main .secondNav, div.eButtonCnt {
+        display: none !important;
+    }
+
+    .toTop, .topSearch, .searchCart, .noPrint {
+        display: none !important;
+    }
+
+    .wrapper > .breadcrumb {
+        display: none !important;
+    }
+
+    #footer > div > div > ul.right {
+        float: left !important;
+    }
+
+    #eBusinessWrapperControl > div.freetext {
+        display: none !important;
+    }
+
+    #cssPaymentSent input.btn3 {
+        display: none !important;
+    }
+
+    .eWrapper.eButtonCntTop {
+        display: none !important;
+    }
+
+    textarea.customer-notes {
+        border: 0px solid #fff !important;
+        outline: 0px solid #fff !important;
+        box-shadow: rgb(255, 255, 255) 0px 0px inset !important;
+        resize: none !important;
+    }
+
+    .eWrapper.freetext {
+        display: none !important;
+    }
+
+    .barcodeTarget {
+        display: block !important;
+        float: right !important;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .barcodeTargetSpace {
+        display: block !important;
+    }
+}

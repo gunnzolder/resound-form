@@ -1,0 +1,97 @@
+/*COLORS*/
+@color01: #f8f8f8;	/*light grey footer background*/
+@color02: #f1592a;	/*red*/	
+@color03: #f1592a;	/*font color*/
+@color04: #434343;  /*topmenu border */
+@color05: #D0D0D0;	/*grey*/
+@color06: #999;		/*dark grey*/
+@color07: #ebebeb;	/*light grey*/
+@color08: #666;		/*footer color*/
+@color09: #DFDEDE;	/*button background*/
+@color10: #3b3b3b;  /*topmenu border */
+@color11: #7f7f7f;	/*breadcrumb / productpage color*/
+@color12: #fff;     /* white (top menu border)*/
+@color13: #f1592a;   /* orange (top menu background) */  
+
+@boxshadow: #bdbdbd;
+
+@bodyFont:Verdana, Arial, sans-serif; 
+@headingFont:Arial, sans-serif;
+@icons: url('gfx/sprite-icons.png') no-repeat;
+@arrows: url(gfx/arrow_audiologysystems.png) no-repeat;
+
+
+body {   
+	color:@color03; 
+	font-size: 0.75em;
+	line-height: 1.333em;
+	&.fontLarge{
+		font-size:0.875em;	
+		h1{
+			font-size:2.5em;	
+		}
+		h2, .secondNavHead{
+			font-size:1.5em;
+		}
+		h3, h4, h5, h6{
+			font-size:1.1428em; /*16px*/
+		}
+		.flexslider .slides .element .image-description .description-title{
+			font-size:2em;
+		}
+	}
+}
+::-moz-selection { background: @color02; }
+::selection { background: @color02; }
+a { color: @color02; text-decoration:none;
+	&:hover{text-decoration:underline;}
+	&:hover { color: @color02; }  	
+}
+.accessibility {
+	color: @color06;
+}
+
+/* IMPORTS
+----------------------------------------------------------------------------------------------------*/
+@import "base.less";
+@import "styles.less";
+
+/* INPUTS
+----------------------------------------------------------------------------------------------------*/
+.btn1, .btn3, .btn4, input[type='submit'], input[type='button'], .dropdownmenu > a, #entry-tags a{	    
+	font-size: 1.16666em;
+}
+
+/* OVERRIDES TO IMPORTED STYLES
+----------------------------------------------------------------------------------------------------*/
+
+/* Top
+----------------------------------------------------------------------------------------------------*/
+#top {
+    .topMenuWrapper {
+        .flags {
+            /* !!! The flags are not to be shown on Audiology !!! */
+            display: none;
+        }
+    }
+}
+
+.context {
+    &.productSpot {
+        background: #f1592a;
+        &:hover {
+            background-color: #3B3B3B;
+        }
+        .textContainer{	
+			padding-bottom:11px;
+			padding-top:12px;
+			h2{								
+				color: #fff;
+			}	
+			.mainText{
+				color: #fff;
+			}											
+		}
+
+    }
+}

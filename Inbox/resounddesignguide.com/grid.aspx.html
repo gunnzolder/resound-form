@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <title>Designguide for GN ReSound</title>
+    
+ <style>
+        
+               
+             body, header a, .nav .nav-container .nav-element, .breadcrumb .breadcrumb-element a, 
+             .content .content-inner h1, .content .content-inner a, .dropdown .dropdown-label, 
+             .dropdown .dropdown-list-element, .dropdown a.dropdown-list-element {
+                color: #333 !important;
+              }
+                .arrownav .left:after, .arrownav .right:after {
+                    border-color: #333;
+                }
+            
+              
+            .content .content-inner a,     
+            .nav .nav-container .nav-element, .dark .nav .nav-container .nav-element, .dropdown .dropdown-label,
+            .dark .dropdown .dropdown-list-element, .dark .dropdown a.dropdown-list-element,
+            .dropdown .dropdown-list-element, .dropdown a.dropdown-list-element { 
+                background-color: #999 !important;
+            }
+            
+     
+             
+            .nav .nav-container .nav-element.nav-element-selected,  
+             .nav .nav-container .nav-element:hover,.dropdown .dropdown-label:hover, 
+             .dropdown .dropdown-list-element:hover, .dropdown a.dropdown-list-element:hover, 
+             .content .content-inner a:hover, .breadcrumb .breadcrumb-element a:hover{
+                background-color: #D71920 !important;
+              }
+            
+
+               
+            body {
+              background-color: #FFFFFF;
+         }
+            
+
+
+    </style>
+	<link rel="stylesheet" type="text/css" href="resources/css/core.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/zenburn.css" />
+	<script src="resources/js/highlight.pack.js" type="text/javascript"></script>
+    <script>
+        hljs.tabReplace = '  ';
+        hljs.initHighlightingOnLoad();
+    </script>
+<script type="text/javascript" src="resources/js/modernizr.custom.70063.js"></script>
+    <link rel="stylesheet" type="text/css" href="media/2258/resound.css" />
+
+</head>
+    <body>
+       
+        <div class="container">
+            <header class="container-inner">
+                <div class="left"><a href="index.html">Designguide for GN ReSound</a></div>
+                <div class="right">Created by 1508</div>
+            </header>
+        </div>
+        <div class="container">
+            <nav class="nav">
+<ul class="nav-container">
+		<li><a class="nav-element " href="colors.aspx.html">Colors</a></li>
+		<li><a class="nav-element nav-element-haschild " href="elements.aspx.html">Elements</a></li>
+		<li><a class="nav-element nav-element-selected" href="grid.aspx.html">Grid</a></li>
+		<li><a class="nav-element nav-element-haschild " href="spots.aspx.html">Spots</a></li>
+		<li><a class="nav-element " href="typografi.aspx.html">Typografi</a></li>
+</ul><ul class="nav-container">
+</ul></nav>
+		
+            <nav class="arrownav">
+		<a href="elements.aspx.html" class="left">&nbsp;</a>
+		<a href="spots.aspx.html" class="right">&nbsp;</a>
+</nav>
+
+
+        </div>
+        <div class="container">
+            
+<div class="container-inner breadcrumb">
+	<ul>
+	</ul>
+</div>
+
+        </div>
+        <div class="container">
+	<div class="container-inner content">
+		<section class="content-inner">
+			<h1>Grid</h1>
+			<p>The base grid is a universal grid, divided into <strong>24</strong> vertical units. The grid is measured in percentages, to enable responsive layout and fluid grid.</p>
+<p>Surrounding the grid is a wrapper with a maximum width of <strong>1008px</strong>, which centers the entire website.</p>
+<p> </p>
+<h2>Example 1</h2>
+<pre><code>&lt;div class="wrapper"&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+	&lt;div class="grid-1"&gt;1&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>Columns can be divided into further sections. The grid allows for a wide range of layouts and templates.</p>
+<p> </p>
+<h2>Example 2</h2>
+<pre><code>&lt;div class="wrapper"&gt;
+	&lt;div class="grid-16"&gt;16&lt;/div&gt;
+	&lt;div class="grid-8"&gt;8&lt;/div&gt;		
+	&lt;div class="grid-24"&gt;24&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="wrapper"&gt;
+	&lt;div class="grid-6"&gt;6&lt;/div&gt;
+	&lt;div class="grid-18"&gt;18&lt;/div&gt;		
+&lt;/div&gt;
+
+&lt;div class="wrapper"&gt;
+	&lt;div class="grid-16"&gt;16&lt;/div&gt;
+	&lt;div class="grid-8"&gt;8&lt;/div&gt;		
+&lt;/div&gt;
+
+&lt;div class="wrapper"&gt;
+	&lt;div class="grid-8"&gt;8&lt;/div&gt;
+	&lt;div class="grid-8"&gt;8&lt;/div&gt;
+	&lt;div class="grid-8"&gt;8&lt;/div&gt;		
+&lt;/div&gt;</code></pre>
+<p>To keep px-margins between the fluid grids, one must add an extra 'div' inside the last grid, with a class of <strong>context</strong>. It is not possible to add e.i. '<strong>Grid context grid'</strong>. It always has to be '<strong>grid grid context'.</strong></p>
+<p>The context class will add a margin of <strong>8px</strong> on both sides and a margin-bottom of <strong>16px</strong>. This will also add a box-shadow and white border around the element.</p>
+<p> </p>
+<h2>Example 3</h2>
+<pre><code>&lt;div class="wrapper"&gt;
+	&lt;div class="grid-8"&gt;
+		&lt;div class="context"&gt;8&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="grid-8"&gt;
+		&lt;div class="context"&gt;8&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="grid-8"&gt;
+		&lt;div class="context"&gt;8&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            
+
+
+
+
+
+		</section>
+		<section class="content-inner">
+			<h2>Example 1</h2>
+<p><img src="media/872/grid_example_01.png" width="779" height="99" alt="Grid Example 01"/></p>
+<h2>Example 2</h2>
+<p><img src="media/877/grid_example_02.png" width="779" height="561" alt="Grid Example 02"/></p>
+<h2>Example 3</h2>
+<p><img src="media/882/grid_example_03.png" width="779" height="113" alt="Grid Example 03"/></p>
+		</section>
+	</div>
+</div>
+
+	
+        <!--[if lt IE 9]>
+            <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+            
+            
+        <![endif]-->
+    </body>
+</html>

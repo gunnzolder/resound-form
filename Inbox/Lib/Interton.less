@@ -1,0 +1,1101 @@
+/*COLORS*/
+@color01: #f8f8f8;  /*light grey footer background*/
+@color02: #4C4D45;  /*10*/  
+@color03: #4C4D45;  /*font color*/
+@color04: #434343;  /*topmenu border */
+@color05: #D0D0D0;  /*grey*/
+@color06: #999;     /*dark grey*/
+@color07: #ebebeb;  /*light grey*/
+@color08: #666;     /*footer color*/
+@color09: #DFDEDE;  /*button background*/
+@color10: #3b3b3b;  /*topmenu border */
+@color11: #7f7f7f;  /*breadcrumb / productpage color*/
+@color12: #434343;  /* top menu border */
+@color13: #000;  /* top menu background */  
+@boxshadow: #bdbdbd;
+
+
+/*otometrics farver*/
+@color16: #a6a698;
+@color17: #A45C19;
+@color18: #F6F6F6;
+@color19: #F3CE00;
+
+/* 
+----------------------------------------------------------------------------------------------------*/
+@bodyFont:verdana,arial,helvetica,sans-serif; 
+@headingFont:Arial, sans-serif;
+@icons: url('gfx/Interton/sprite-icons.png') no-repeat;
+@arrows: url(gfx/Interton/arrows.png) no-repeat;
+
+
+/* GENERELT
+----------------------------------------------------------------------------------------------------*/
+body{
+	color:@color03; font-size: 0.6875em; line-height: normal;
+	&.fontLarge{
+		font-size:1em;   
+		h1{
+			font-size: 1.75em;	
+		}
+		h2, .secondNavHead{
+			font-size: 1em !important;
+		}
+		.flexslider .slides .element .image-description .description-title{
+			font-size: 2em;
+		} 
+	}
+}
+::-moz-selection { background: @color02; }
+::selection { background: @color02; }
+a { color: @color03; text-decoration:underline;
+	&:hover{text-decoration:underline; color: @color03;}
+	&:visited { color: @color03  }
+}
+.accessibility {
+	color: @color06;
+}
+
+
+/* IMPORTS
+----------------------------------------------------------------------------------------------------*/
+@import "base.less";
+@import "styles.less";
+
+
+/*Box
+----------------------------------------------------------------------------------------------------*/
+.box{
+	border:none;    
+	.box-shadow(none);
+}
+/* FONTS
+----------------------------------------------------------------------------------------------------*/
+
+h1,h2,h3,h4,h5,h6,.shortintro, .Paging li{
+  	font-family:@headingFont;
+	font-weight:700;
+  	line-height:normal;  
+}
+h1{
+	color: #52616E;
+	font-size:2.5em;
+	font-weight:100; 
+	margin-bottom:17px;
+	margin-top:0;
+}
+h2{
+	font-size:1.5em;
+	margin-bottom:10px;
+}
+h3, h4, h5, h6{
+	font-size:1em; /*16px*/
+	margin-bottom:11px;
+}
+
+h5{
+	font-size:0.83em; /*14px*/
+}
+h6{
+	font-size:0.67em; /*13px*/
+}
+.shortintro{
+  font-size: 1.5454em;
+  font-weight:100;
+  line-height: 1.294em;
+  margin-bottom: 23px;
+}
+.link{
+  background-position: 0 -1px;
+  color: @color03;
+  padding: 0 0 0 21px;
+  text-decoration: underline;
+  &:hover{
+	background-position: 0 -1px;
+  }
+}
+
+/* LINKLIST
+----------------------------------------------------------------------------------------------------*/
+.linkList{
+	li{
+		a{
+			&:hover{
+				background-position:0 0;
+			}
+		}
+	}
+}
+
+/* NOTIFY
+----------------------------------------------------------------------------------------------------*/
+.notifyContainer a, .notifyContainer a:visited {
+	color: @color07;
+}
+
+
+/* INPUTS
+----------------------------------------------------------------------------------------------------*/
+.btn1, .btn3, .btn4, input[type='submit'], input[type='button'], .dropdownmenu > a{          
+	color: @color03;  
+	.border-radius(0);
+	&:hover, &:visited{
+		color: @color03;
+	}
+}
+
+.btn1, input[type='submit'].btn1,
+.btn4, input[type='submit'].btn4{   
+	color: #fff;  
+		&:hover{
+			color: #fff;
+		}
+	}
+input[type='text'],
+input[type='password'],
+textarea{
+	.border-radius(0);
+}
+
+/* CUSTOM DROPDOWNMENU
+----------------------------------------------------------------------------------------------------*/
+/* applied to original <select> to hide */
+.has_sb{position:absolute;left:-999999em;text-indent:-999999em;}
+
+/* always visible styles */
+div.selectbox{  
+	.display{
+		.border-radius(0);      
+		&.active{
+			.border-radius(0);
+		}         
+	}
+}
+.selectbox.items{
+	.border-radius(0);
+		&.above{
+			.border-radius(0);
+		} 
+		li.last{
+			.border-radius(0);
+		> .item{
+			.border-radius(0); 
+		} 
+	}
+}
+
+/* Top
+----------------------------------------------------------------------------------------------------*/
+#top{
+	background: url(gfx/Interton/pg_top.gif) no-repeat 50% 0;      
+	padding-bottom: 2px;
+	.inner{
+		background: none;       
+		padding-top: 12px;
+	}  
+	.flags{  	
+		background: @color16;
+		margin-right:0;
+		margin-top: -14px;
+		padding: 5px 16px 3px 0;
+		position: relative;
+		.corner{
+			background: url(gfx/Interton/oblique-top-left.png) no-repeat left 2px @color16;    
+			height: 31px;
+			left: -176px;
+			top: 0px;
+			width: 176px;		
+		}	
+		.btn3{  
+			background: @arrows -13850px 3px #fff;
+			border-color: @color16;
+			.border-radius(0);
+			height: 21px;
+			padding-right: 18px;
+			width: 130px;
+			> img {
+				left: 5px;
+				top: 2px;
+			}
+			> span.flag{
+				left: 0;
+				line-height: 21px;
+				margin-left: 24px;
+				position:relative;
+				top: 0;
+			}
+		}  
+		&.active > .btn3{
+	  		background: @arrows -13850px 3px #fff;
+	  		.border-radius(0);            
+		}  
+  	} 
+	.topNavigation{
+		background:none;
+		margin-top: 43px;
+		ul{     
+			li{           
+				background: url(gfx/Interton/mtab_2.png) no-repeat 0 -25px;
+				border: none;
+				margin-left: -21px;                 
+				&:hover, &.active, &.active:hover{
+					background: url(gfx/Interton/mtab_2.png) no-repeat 0 0px;
+					div{
+						background: url(gfx/Interton/mtab_2.png) no-repeat right -75px;
+					a{
+						background:@color16;
+						color: #fff;			  
+					}
+				}
+			}
+			&:first-child{
+				background:none;
+				margin-left: 0;
+				div{
+					margin-left: 1px;
+					a{
+						padding-left:16px;
+					}
+				} 
+				&:hover{
+					background:none;
+				}
+			}
+			div{
+				background: url(gfx/Interton/mtab_2.png) no-repeat right -50px;
+				margin-left: 25px;
+				padding-right: 24px;
+				a{                    
+					background: @color19;
+					color: @color03;
+					font-family: @bodyFont;
+					font-size: 1.1818em;
+					font-weight: 100;
+					line-height: 1.230769230769231em;
+					margin-left: 0;
+					padding: 5px 8px 4px;
+					position: static;
+				}
+			}                         
+		}
+	}   
+}
+.topSearch{   
+	background: @color16;
+	height: 31px;
+	margin-top: -14px;
+	.searchToggle{
+		margin-top: 5px;
+	}
+	fieldset{ 
+		background:none;
+		border: none;
+		.border-radius(0);
+		.box-shadow(none);
+		height:32px;
+		width: 177px;
+		.formElement{
+			background: #fff;
+			margin-top: 6px;
+			label{
+				top: 4px;
+			}
+			input{          
+				background:#fff;
+				height:21px;
+				line-height: 21px;
+				margin:0 13px;
+				width: 129px;
+				.ie7 &, .ie8 &{ 			
+					height:21px;					
+				}
+			}
+		} 
+		.btn{
+			background: @icons 5px -54px;
+			height: 32px;
+			.border-radius(0);
+			width: 22px;
+		}
+	}   
+}
+.sectionnavigation{      
+	background: url(gfx/Interton/bc_bg_978x53noBorder.png) no-repeat 50% 3px;  
+	margin-bottom: 4px;
+	ul{  
+		padding: 2px 15px 12px;   
+		border-bottom: 1px solid #e9e9e5;   
+			li{   
+				margin-top: 10px;   
+				a{   
+					font-family: @headingFont;
+					font-size: 1.0909em;   
+					padding-left:22px;
+					text-decoration: none;
+					&:hover{
+						background-position:0 0;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+.flagDropdownmenu {
+	background: white;
+	border-color: @color16;
+	.border-radius(0);
+	padding: 4px 0 0;
+	top: 25px;
+	width: 155px;
+	ul li{
+		padding: 2px 7px 3px 11px;
+		margin: 0;
+		max-height:40px;
+		a{
+			padding-left:20px;
+			width:99px;
+			&:hover{
+				color:@color03;  
+			}          
+			span.flag{
+				left: 5px;  
+				top: 0px;
+			}
+		} 
+	}
+}
+
+
+/* BreadcrumblessShadowBottomIE
+----------------------------------------------------------------------------------------------------*/
+.breadcrumb{  
+	margin-bottom: 3px;
+	max-width:none;
+	position: relative;
+	top: -6px;
+	> span{
+		color:@color03;
+		padding-left: 16px;   
+	}    
+	ul{       
+		li{
+			background:@arrows -9990px 0;     
+			color:@color03;
+			a{
+				color:@color03;        
+				&:hover{
+					color: @color17;   
+				}
+			}
+		}
+	}
+}
+
+/* Main
+----------------------------------------------------------------------------------------------------*/
+#main{
+	background:none;
+	.mainInner{
+		background: none;
+		padding: 0;
+	}
+	.frontpage{
+		background: #fff;
+	}
+	.mainContent{
+		margin-top: 41px;
+	}
+	a.share{
+		margin: 7px 12px 16px 0;  
+	}
+}
+
+/* Second menu
+----------------------------------------------------------------------------------------------------*/
+.secondNav{      
+	> div{
+		background:#fff;
+		margin: 39px 0 0 8px;
+		overflow: hidden;    
+		padding: 0 20px 0 0;
+		position: relative;
+	}
+	.secondNavHead{   
+		background:#e7e7e4;
+		border-bottom:2px solid #fff;
+		font-family: @bodyFont;
+		font-size: 1.2727em;
+		font-weight:100;
+		margin-top:0;
+		padding:7px 15px 7px;    
+		+ ul{
+			background:url(gfx/Interton/lnav_bg_222x53.png) repeat-x 0 top #fff;
+			padding-top: 21px;
+			padding-left:15px; 
+		}
+	}
+	ul{    
+		li{
+			margin-bottom:11px;     
+			&.parent{
+				margin-bottom: 0;
+				> a{  
+					background-position:-9001px -1px;     
+					color:@color03; 
+					margin-bottom:0;
+					padding-bottom: 10px;
+					&:hover{
+						background-position:-9001px -1px;
+					}   
+				}
+				ul{
+					padding-bottom: 0;          
+					li.active a{
+						background-position:-9990px 0;
+						
+					}
+				} 
+			}
+			&.active{
+				margin-bottom: 0;
+				> a{  
+					background-position:-10983px 0;
+					color:@color03;  
+					margin-bottom: 0;
+					padding-bottom: 10px;
+					                 
+				}
+				ul{
+					padding-bottom: 1px;          
+				} 
+			}     
+			a{
+				background:@arrows -1px 0;              
+				font-size:1.0714em;
+				padding-left: 18px;
+				text-decoration: none;
+				&:hover{
+					background-position:-10983px 0;
+					color:@color03; 
+					text-decoration: underline;
+				}
+			}
+			ul{ 
+				li{
+					margin-bottom:0;
+					&.active a{
+						background-position:-9997px 0;
+					} 
+					&.parent{
+						> a{
+							background-position: -9001px -1px;			
+							padding-left: 16px;
+							&:hover{
+								background-position: -9001px -1px;	
+							}
+						}
+					}		       
+					a{       
+						background-position:-9990px 0;
+						font-weight:100; 
+						margin-bottom:0;
+						padding-bottom: 10px;    
+						&:hover{
+							background-position:-9990px 0;
+						}                      
+					}             
+				}
+			}
+		}
+	}
+}
+
+/* Body text
+----------------------------------------------------------------------------------------------------*/
+.bodytext{
+	font-size: 1.0909em;
+	table {
+		tbody:first-child tr, thead + tbody tr{
+			td {
+				background: @color07;
+			}
+		}
+		tbody:first-child tr{   /*Hvis der IKKE er nogen header*/
+			&:nth-child(odd){
+				td{
+					background:#fff;
+				}
+			}    
+		}
+		thead + tbody tr{   /*Hvis der ER nogen header*/
+			&:nth-child(even){
+				td{
+					background:#fff;
+				}
+			}   
+		}
+		th, tbody:first-child tr:first-child td {
+			background: #F1C800;
+			border-bottom: 2px solid #FFFFFF;
+			color: @color03;
+		} 
+		th:nth-child(n+2),td:nth-child(n+2){
+			border-left:2px #fff solid;
+		}
+	}
+}
+
+/* Dispenser locator
+----------------------------------------------------------------------------------------------------*/
+.dispencer, .dispenserLocatorSpot{  
+	.dispenserSearch{ 
+		.formElement.input{
+			.border-radius(0);
+			.box-shadow(none);            
+		}
+	}
+}
+
+/* Flexslider
+----------------------------------------------------------------------------------------------------*/
+.flexslider .slides li{
+	max-height: 295px;
+	.element{
+		max-height: 295px;
+		a.link{
+			background-position: 0 -1px;
+			&:hover{                 
+				background-position: 0 -1px;
+				color: #fff;
+			}
+		}
+		&.dark a.link{                  
+			background-position: 0 -1px;
+			color:@color03;                        
+			&:hover{
+				background-position: 0 -1px;
+			}
+		}
+		a.btn1{		
+			color: #fff;
+		}    
+		.image-description{
+			.description-title, .body {
+				font-family: @bodyFont;
+			}
+			.body{
+				font-size: 1em;
+			}
+		}  
+	}
+}
+.flexslider .flex-control-nav li a {
+	background: url(gfx/Interton/navigator.png);
+}
+
+
+/* Tabsspot
+----------------------------------------------------------------------------------------------------*/
+.productMenu .nav a {
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+/* Tabsspot
+----------------------------------------------------------------------------------------------------*/
+.tabsGrid{	
+	margin-top: 43px;
+	ul.featurelist{     
+		background:none;
+		li{           
+			background: url(gfx/Interton/mtab_2.png) no-repeat 0 -100px;
+			border: none;
+			margin-left: -21px;                 
+			&:hover, &.active, &.active:hover{
+				background: url(gfx/Interton/mtab_2.png) no-repeat 0 0px;
+				a{
+					background: url(gfx/Interton/mtab_2.png) no-repeat right -75px;
+					span{
+						background:@color16;
+						color: #fff;
+					}
+				}
+			}
+			&:first-child{
+				background:none;
+				margin-left: 0;
+				a{
+					margin-left: 0;
+					span{
+						padding-left:16px;	
+					}					
+				}
+				&:hover{
+					background:none;
+				}
+			}
+			a{
+				background: url(gfx/Interton/mtab_2.png) no-repeat right -125px;
+				line-height: 1.230769230769231em;
+				margin-left: 25px;
+				padding-right: 24px;
+				span{                    
+					background: #e9e9e5;
+					color: @color03;
+					font-family: @bodyFont;
+					font-size: 1.1818em;
+					font-weight: 100;
+					padding: 5px 8px 4px;
+					position: static;
+					margin-left: 0;
+				}
+			}                         
+		}
+	}   
+	.tabResult{
+		background: url(gfx/Interton/lnav_bg_222x53.png) repeat-x 0 top white;
+		margin: 0 8px;
+		padding-top: 35px;
+		.inner{
+			padding-top: 0;
+		}
+	}	
+}
+
+	  
+/* Context elements
+----------------------------------------------------------------------------------------------------*/
+.context{   
+	.textContainer h2{
+		color: #52626D;		
+		font-size: 1.4545em;
+		font-weight: 100;
+		line-height:1em;
+	}
+	&.promo .textContainer, &.fact .textContainer, &.productSpot .textContainer {
+		font-family: @headingFont;
+		font-size: 1.0909em;
+	}
+	&.promo{
+		background: none;
+		&:hover{
+			background:none;
+		}
+		> a{            
+			height: auto;
+			text-decoration: none;
+			.link, &:hover .link{
+				background-position: 0 0;
+			}   
+		}
+		h2{
+			color: #52626D;
+			font-size: 1.4545em;
+			font-weight: 100;
+			margin-bottom: 0;
+			padding: 0 0 10px;          
+		}
+		.textContainer{
+			background: url(gfx/Interton/fp_prm_bg_316x53.gif) repeat-x 0 top;
+			height: auto;
+			font-size: 1em;
+			font-family: @bodyFont;
+			margin-bottom: -11px;
+			padding:8px 8px 0;
+			.mainText {
+				height: auto; 
+				margin-bottom:0;
+				padding:0 0 25px;
+				min-height:0;
+			}           
+		}
+	  .link{
+		  bottom: 0;
+		  left: 7px;
+		  max-height: none ;
+		  position: relative;
+		  text-decoration: underline;
+		}
+		.imgContainer{
+			height: auto;   
+			max-height: 100px;   
+			overflow: hidden;
+			position: relative;     
+			img{
+				max-height: none;
+				position: relative;
+				top: 0;
+				width: 100% !important;
+			}
+		}                      
+	}
+	&.fact{    
+		a, &.black a{
+			background-image: none;
+			text-decoration: none;
+		}    
+		.link, &:hover .link{
+			background-position: 0 0;
+		}      
+		&.black{
+			.link, &:hover .link{
+				background-position: 0 0;      
+			} 
+			&:hover .link{     
+				color: #fff;  
+			} 
+		}      
+	} 
+	&.productSpot{
+		.link, &:hover .link{
+			background-position: 0 0;
+		}
+	}
+	&.dropdownLinkSpot {
+		background: #EBEBEB;
+	}
+	&.boxModel{   
+		&.videothumbnail{
+			.img a{
+				height: 100px;
+				span.play{
+					background:url(gfx/Interton/VideoIcon.png) no-repeat 0 0;
+					height: 35px;
+					margin-left: -17px;
+					margin-top: -17px;
+					width: 35px;
+				}
+			} 
+		}
+		.img{
+			height:100px;
+			margin-top: 29px;
+			overflow: hidden;
+			position: relative;
+			a span.play{
+				background:url(gfx/Interton/VideoIcon.png) no-repeat 0 0;
+				height: 35px;
+				margin-left: -17px;
+				margin-top: -17px;
+				width: 35px;
+			}
+		}
+		.text{
+			.textContainer{
+				overflow: visible;
+				h3{
+					color: #52626D;
+					font-family: @headingFont;
+					font-size: 1.4545em;
+					font-weight: 100;
+					height: 20px;
+					margin-top: -23px;
+					position: relative;
+					overflow: hidden;
+					top: -106px;
+				}  
+				.textWrapper{
+					font-family: @headingFont;
+					font-size: 1.090909090909091em;       
+				}     
+			}
+		} 
+		&.g100{
+			.img{
+				height: auto;
+				margin-top: 0;
+			}
+			.text{      
+				.textContainer{   					
+					h3{
+						font-family: @headingFont;
+						font-weight:100;
+						line-height: 1.25em;
+						margin-bottom: 3px;           
+						margin-right:4px;
+						margin-top:0;
+						top:0;
+					}             
+					.textWrapper{						
+						margin-bottom: 8px;
+					}     
+				}
+			}
+		}
+	}
+}
+
+#pageBottom{
+	background:none;
+	#footer{
+		background: url(gfx/Interton/pg_bot.gif) no-repeat 50% 15px #fff;
+		.wrapper{
+			background: url(gfx/Interton/oblique-bottom-right.png) no-repeat 72px 0;
+			ul{
+				margin-left: 140px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 920px) {
+  	/*red*/
+}
+@media screen and (min-width: 770px) and (max-width: 919px) {
+  	/*blue*/
+}
+@media screen and (max-width: 769px) {  
+	/*purple*/
+	body{
+		background: none;
+	}
+	#top{  
+		background: none;
+		.inner{
+			padding-top: 0;
+			border-top: none;
+			.wrapper{
+				padding-top: 11px;
+			}
+		}
+		.logo{
+			position: relative;
+			top: 2px;
+			left: 0;
+		}
+		.topMenuWrapper{
+			font-size: 1.090909090909091em;
+			padding-top: 0;
+			.flags{
+				padding: 0;
+				.corner{
+					display: none;
+				}
+				.btn3 > span.flag{
+					display: none;
+				}
+			} 	
+			.topSearch{
+				margin: 0;
+				padding: 0;
+				.searchToggle {
+					margin-top: 0;
+				}
+			}	
+		}							
+		.sectionnavigation{   
+			background:#fff;  
+			ul{       
+				padding: 9px 0 12px;
+				li{          
+					border-bottom: 1px solid #999;
+					border-top: 1px solid #999;
+					margin: -1px 0 0;
+					&:hover, &.active, &.active:hover{
+						border-color: #999;
+						a{
+							background: @color16;
+						}				
+					} 
+					&:nth-child(2n + 1){
+						border-color: #999;
+					}            
+					a, div a{
+						background: @color19;						
+						padding: 11px 15px 9px;
+					}
+				} 
+			}
+		}    		
+	}
+	.flagDropdownmenu{
+		padding: 7px;
+		top: 63px;
+		width: auto;
+		ul li{
+			padding: 0 0 7px;
+			a{
+				padding-left: 37px;				
+				width: 100%;
+				span.flag {
+					left: 0;
+					top: 5px;
+				}
+			}
+		}
+	}	
+	.secondNav{		
+		> div{
+			margin: 0 8px;
+			padding: 0;
+		}
+		.secondNavHead{
+			border-bottom: 1px solid #999;
+			border-top: 1px solid #999;
+			margin-bottom: 0;
+			padding: 9px 15px 10px 20px;
+			+ ul{
+				padding: 0;
+				margin: 0;
+			}
+		}
+		ul{
+			margin: 0;
+			li{
+				margin-bottom: 0;
+				&.active{
+					ul{
+						padding-bottom: 0;
+					}
+					> a {
+						background-position: -10980px 10px;
+						background-color: @color19;
+					}
+				} 
+				&.parent{
+					> a{
+						background-position: -8998px 10px;
+						&:hover{
+							background-position: -8998px 10px;			
+						}
+					}
+					ul li{					
+						&.active a {
+							background-position: -9981px 10px;	
+							background-color: @color19;				
+						}
+					}
+				}
+				a{
+					background-position: 2px 9px;
+					border-top: none;
+					border-color: #999;
+					font-family: @bodyFont;
+					font-size: 1em;
+					font-weight: 100;
+					padding-bottom: 12px !important;
+					padding-top: 11px !important;
+					&:hover{
+						background-position: -10980px 10px;	
+						background-color: @color19;	
+					}
+				}
+				ul li{									
+					&.parent{
+						> a{
+							background-position: -8998px 10px;
+							padding-left: 18px;
+							&:hover{
+								background-position: -8998px 10px;			
+							}
+						}
+					}
+					a {
+						background-position: -9981px 10px;
+						font-family: @bodyFont;
+						&:hover{
+							background-position: -9981px 10px;
+						}
+					} 
+				}
+			}
+		}
+	}
+	#main a.share{
+		top: -39px;
+		margin-left: 8px;
+	}
+}
+/* Mobil menu
+----------------------------------------------------------------------------------------------------*/
+/*Ipad portrait mode*/
+@media screen and (min-width: 531px) and (max-width: 769px){
+	/*Ipad menu*/
+	.mobil-container{		
+		.topNavigation{
+			ul{	
+				ul li a{
+					padding-top: 14px;
+				}
+				a{ font-family: Arial, sans-serif;}			
+				&.level1{
+					> li{
+						&.active > a{ background: @color16;}
+						&:last-child{ border-color: @color04;}
+						> a{
+							font-family: Arial, sans-serif;
+							font-weight: 700;
+						}
+					}
+				} 	
+				&.level2, &.level3, &.level4, &.level5, &.level6, &.level7, &.level8{
+					border-color: @color04;
+					> li{
+						&.active > a{
+							background-color: @color16;
+							background-image: url(gfx/arrows.png);							
+						}
+					}
+				} 								
+			}			
+		} 
+	}
+}	
+
+@media screen and (max-width: 530px) {
+	/*Orange*/
+	#top{	
+		.logo{
+			margin-bottom: 18px;
+		}		
+	}
+	/* Mobil menu
+	----------------------------------------------------------------------------------------------------*/
+	.mobil-container{		
+		ul{
+			&.level1{ border: 1px solid #000;}			
+			&.level1, &.level2, &.level3, &.level4, &.level5, &.level6, &.level7, &.level8{
+				> li.active > a{					
+					background-color: @color16;					
+					color: #000;
+				}				
+			}			
+			&.level1 > li.active > a{ background-position: -6988px 12px;}					
+			&.level2 > li.active > a{ background-position: -6968px 12px;}					
+			&.level3 > li.active > a{ background-position: -6948px 12px;}	
+			&.level4 > li.active > a{ background-position: -6928px 12px;}		
+			&.level5, &.level6, &.level7, &.level8{
+				> li.active > a{
+					background-position: -6908px 12px;					
+				}
+			}					
+		}
+	}	
+	.flagDropdownmenu{	
+		background: #fff;
+		top: 134px;		
+		width: auto;
+	}
+	#pageBottom #footer .wrapper ul{
+		margin-left: 0;		
+	} 
+	.flexslider .flex-control-nav li a {
+		background: url(gfx/Interton/navigatorMobile.png);
+	}
+	.context{
+		&.boxModel{
+			&.g33, &.g50, &.g100{
+				.img {					
+					a span.play{						
+						background-image: url(gfx/Interton/VideoIcon-mobile.png);
+						margin-left: -13px;
+						margin-top: -35px;
+					}
+				}
+			}
+		}
+	}
+}
+

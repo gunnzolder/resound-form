@@ -1,0 +1,584 @@
+﻿.dim, .dim .hiddenfilter {
+    padding: 3px;
+    line-height: 5px;
+    color: red;
+    width: 205px;
+    border: 2px solid #fff;
+    -moz-box-shadow: 0px 1px 5px #bdbdbd;
+    -webkit-box-shadow: 0px 1px 5px #bdbdbd;
+    -ms-box-shadow: 0px 1px 5px #bdbdbd;
+    box-shadow: 1px 6px 5px #bdbdbd;
+    margin-bottom: 20px;
+}
+
+.dim {
+    margin-top: 10px;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    -moz-box-shadow: 1px 1px 5px #bdbdbd;
+    -webkit-box-shadow: 1px 1px 5px #bdbdbd;
+    -ms-box-shadow: 1px 1px 5px #bdbdbd;
+    box-shadow: 1px 1px 5px #bdbdbd;
+    background: url(gfx/gradient-top-product.png) repeat-x 0 top #fff;
+    background: url('gfx/sprite-button.png') repeat-x 0 -218px #dfdede;
+    background-color: #F3F3F3;
+    /*border: 1px solid #d0d0d0;*/
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    font-weight: 100;
+    min-height: 18px;
+    line-height: 18px;
+    outline: none;
+    position: relative;
+    text-decoration: none;
+    word-wrap: break-word;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dim .hiddenfilter {
+    margin-left: -7px;
+    margin-top: 8px;
+    display: none;
+    height: 160px;
+    z-index: 99999;
+    background: white;
+    position: absolute;
+    width: 220px !important;
+}
+
+.dim .hiddenfilter:first-child {
+    margin-top: 10px;
+}
+
+.container_filter {
+    width: 100%;
+    float: left;
+    height: 40px;
+    z-index: 30;
+    position: relative;
+    top: -20px;
+}
+
+.container_filter2 {
+    background: white;
+    -webkit-box-shadow: 2px 1px 5px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow: 2px 1px 5px rgba(50, 50, 50, 0.35);
+    box-shadow: 2px 1px 2px rgba(50, 50, 50, 0.35);
+    -ms-box-shadow: 2px 1px 2px rgba(50, 50, 50, 0.35);
+    border-top: 1.5 solid grey;
+    max-width: 750px;
+    margin-bottom: 20px;
+}
+
+.dw_arrow {
+    padding-top: 8px;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 27px;
+    font-weight: bold;
+    /* color: #e2e2e2; */
+    color: #757575;
+    float: right;
+    text-indent: -9999px;
+    width: 20px;
+    height: 10px;
+    background: url(gfx/eBusiness/pk-icon-arrow-toggle.png) 0 -40px;
+}
+
+.filterdropdown {
+    width: 100%;
+    height: 50px;
+    float: left;
+    z-index: 40;
+    background: #fff;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    display: block;
+    font-family: Arial,sans-serif;
+    font-size: 1em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 99999;
+}
+
+.filterspan {
+    height: 50px;
+    background: white;
+    border: 2px solid #fff;
+    -moz-box-shadow: 0px 1px 5px #bdbdbd;
+    -webkit-box-shadow: 0px 1px 5px #bdbdbd;
+    -ms-box-shadow: 0px 1px 5px #bdbdbd;
+    box-shadow: 1px 6px 5px #bdbdbd;
+    margin-left: 10px;
+}
+/*
+li {
+	list-style: none;
+}
+*/
+
+.filter_button {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    font-variant: small-caps;
+}
+
+.filter_button input {
+    width: 100%;
+    margin-top: 10px;
+    background: url('gfx/sprite-button.png') repeat-x 0 -218px #dfdede;
+    border: 1px solid #d0d0d0;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    font-weight: 100;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+    word-wrap: break-word;
+    position: absolute;
+    top: 180;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.16666em;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-appearance: button;
+    line-height: 24px;
+    font-family: 'HelveticaNeueMedium';
+}
+
+.filter_dropdown {
+    z-index: 99999;
+}
+
+.mutliSelect {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+    height: 120px;
+    z-index: 99999;
+    cursor: default;
+}
+
+.mutliSelect.items li {
+    border-left: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.mutliSelect.items li::selection {
+    background: #d71920;
+}
+
+.mutliSelect ul li .item .text {
+    zoom: 1;
+    white-space: normal;
+}
+
+.arrow_btn {
+    background: url(gfx/arrows.png) no-repeat -13983px 5px;
+    border-left: 1px solid #d0d0d0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 28px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.arrow_btn span.arrow {
+    display: none;
+}
+
+.mutliSelect ul li {
+    float: left;
+    width: 110%;
+    min-height: 30px;
+    padding-bottom: 8px;
+    word-wrap: break-word;
+    list-style-position: outside;
+    position: relative;
+    left: -36px;
+}
+
+.mutliSelect ul li input {
+    margin-right: 5px;
+}
+
+.mutliSelect ul li div {
+    display: inline;
+    zoom: 1;
+    line-height: 1.2em;
+}
+
+
+
+.close {
+    height: 20px;
+    color: #BE0E0E;
+    cursor: pointer;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    /* No support for these yet, use at own risk */
+    -o-user-select: none;
+    user-select: none;
+    font-variant: small-caps;
+}
+
+
+
+/*styling ###########*/
+
+.expand_button {
+    position: absolute;
+    right: 6px;
+    width: 40px;
+    background: #ececec;
+    top: 9px;
+    border-radius: 7px;
+    float: right;
+    border: 2px solid #fff;
+    -moz-box-shadow: 1px 1px 5px #bdbdbd;
+    -webkit-box-shadow: 1px 1px 5px #bdbdbd;
+    -ms-box-shadow: 1px 1px 5px #bdbdbd;
+    box-shadow: 1px 1px 5px #bdbdbd;
+    background: url(gfx/gradient-top-product.png) repeat-x 0 top #fff;
+    background: url('gfx/sprite-button.png') repeat-x 0 -218px #dfdede;
+    background-color: #F3F3F3;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    /* No support for these yet, use at own risk */
+    -o-user-select: none;
+    user-select: none;
+}
+
+div.faqbutton {
+    padding-top: 4px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    /*color: #e2e2e2;*/
+    color: #757575;
+    text-align: center;
+}
+
+div.faqbutton span {
+    text-align: center;
+}
+
+ul li .info {
+    font-size: 11px;
+    max-width: 116px;
+    overflow: hidden;
+    padding-right: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+ul li .icon {
+    font-size: 13px;
+    text-align: center;
+    width: 10px;
+    vertical-align: middle;
+}
+
+ul li.filbutton {
+    border: 1px solid #eaeaea;
+    display: block;
+    margin: 0 10px 5px 0;
+    padding: 0 5px;
+    float: left;
+    background: #fff;
+    display: inline;
+    cursor: pointer;
+    font-size: 1.16666em;
+    text-transform: uppercase;
+}
+
+ul li.filbutton:hover {
+    background-color: #ececec;
+}
+
+ul li.filtButton.resetButton {
+    margin: 0 10px 5px 0;
+    float: right;
+    height: 19px;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-size: 11px;
+}
+
+ul li.label {
+    display: block;
+    margin: 0 10px 5px 0;
+    padding: 0 5px;
+    float: left;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 1.16666em;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    height: 19px;
+}
+
+ul li.label span {
+    height: 20px;
+}
+
+ul li.label h2 {
+    height: 20px;
+    margin: 6px 0 0 0;
+}
+
+ul li.resetButton span.value {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    vertical-align: middle;
+}
+
+ul.selection {
+    overflow: hidden;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    min-height: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+#ProductBrowserPanel {
+    /**################ BUTTONS DROPDOWN ####################*/
+    .mainText.orderNow {
+        bottom: 0;
+        float: left;
+        height: 50px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    .mainText.orderNow > div {
+        margin-top: 10px;
+    }
+
+    .orderearmoulds {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        float: left;
+        left: 0;
+        bottom: 0;
+    }
+
+    .orderearmoulds > div.left {
+        float: left;
+        width: 133px;
+        clear: none;
+        position: relative;
+        margin-left: 6px;
+        max-height: 50px;
+    }
+
+    .orderearmoulds > div.right {
+        float: right;
+        position: relative;
+        clear: none;
+        margin-right: 6px;
+        bottom: 0;
+        margin-top: 10px;
+    }
+
+    .ordernonconfigurablespares {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        float: left;
+        left: 0;
+        bottom: 0;
+    }
+
+    .ordernonconfigurablespares > div.left {
+        float: left;
+        width: 133px;
+        clear: none;
+        position: relative;
+        margin-left: 6px;
+        max-height: 50px;
+    }
+
+    .ordernonconfigurablespares > div.right {
+        float: right;
+        position: relative;
+        clear: none;
+        margin-right: 6px;
+        bottom: 0;
+        margin-top: 10px;
+    }
+
+    .ordernonconfigurablespares > div.left > .defaultText {
+        width: 70px;
+        margin-top: 10px;
+    }
+
+    .ordernonconfigurablespares > div.left > span {
+        width: 80px;
+        margin-top: 10px;
+    }
+
+    #main .formElement {
+        margin-top: 0;
+    }
+
+    .formElement.dropdownlist {
+        margin-right: 0;
+    }
+
+    div.eBusiness input[type="submit"], div.eBusiness a.btn1 {
+        padding: 4px 4px;
+        margin-left: 0;
+    }
+    /**####################################*/
+    .filter_button input:hover {
+        background-position: 0 -321px;
+    }
+
+    .filter_button input {
+        width: 100%;
+        margin-top: 10px;
+        background: url('gfx/sprite-button.png') repeat-x 0 -218px #dfdede;
+        border: 1px solid #d0d0d0;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -ms-border-radius: 7px;
+        border-radius: 7px;
+        color: #000;
+        cursor: pointer;
+        display: block;
+        font-weight: 100;
+        min-height: 18px;
+        line-height: 18px;
+        outline: none;
+        overflow: hidden;
+        text-decoration: none;
+        word-wrap: break-word;
+        position: absolute;
+        top: 180;
+        text-align: center;
+        font-variant: small-caps;
+        display: inline-block;
+        zoom: 1;
+        font-family: 'HelveticaNeueMedium';
+        font-weight: 100;
+        line-height: 24px;
+        font-size: 1.16666em;
+    }
+
+    .filterChoicesPanel h2 {
+        font-family: Verdana,Arial,sans-serif;
+        font-size: 11px;
+        font-variant: small-caps;
+        position: relative;
+        top: -2px;
+    }
+}
+
+#loadProgress {
+    z-index: 200;
+    background-color: transparent;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+/* change for product box */
+div.eBusiness div.g-33 div.gradientBox div.inner {
+    padding: 12px 15px 70px;
+}
+
+div.eBusiness div.g-33 div.gradientBox div.inner div.textContainer {
+    height: 54px;
+    margin-bottom: 0px;
+}
+
+div.eBusiness .productDescription {
+    height: 30px;
+    overflow: hidden;
+}
+
+#ProductBrowserPanel .ordernonconfigurablespares {
+    height: 62px;
+    left: 5%;
+    width: 90%;
+    bottom: 10px;
+    text-align: center;
+}
+
+#ProductBrowserPanel .ordernonconfigurablespares > div.left {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+#ProductBrowserPanel .ordernonconfigurablespares > div.left > .defaultText {
+    margin: 0;
+}
+
+#ProductBrowserPanel .ordernonconfigurablespares > div.right {
+    margin: 5px 0 0;
+    width: auto;
+    min-width: 55%;
+    float: none !important;
+    display: inline-block;
+}
+
+#ProductBrowserPanel .ordernonconfigurablespares > div.right input {
+    width: 100%;
+    margin: 0;
+}
+/* change for product box */
+
+/* added for hearing aids */
+#ProductBrowserPanel div.eBusiness input[type="submit"] {
+    min-width: 55%;
+}
+/* added for hearing aids */

@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resound prototype</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id="top" class="clearfix">
+    <div class="inner">
+        <div class="wrapper clearfix" id="eBusinessServiceNavigationWrapper">
+
+
+            <div class="eBusinessServiceNavigation">
+                <div id="regions_0_ctl00_LoggedinPanel" class="spot g-100">
+
+                    <div class="linkList">
+                        <ul>
+                            <li><a href="/my-account">Manage my profile</a></li>
+                            <li><a href="/?logout=true">sign out</a></li>
+
+                            <li>Not <span class="username">Michael Hansen</span>?
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="wrapper clearfix" id="ctl1">
+
+            <a tabindex="1" class="logo" href="/">
+                <img src="gfx/resound-logo.png" alt="ReSound logo" width="159" height="38">
+            </a>
+            <div class="topMenuWrapper items2">
+                <!---->
+
+
+
+
+                <div class="topSearch">
+                    <a href="#" class="searchToggle btn1"><span>search2</span></a>
+                    <fieldset>
+                        <div id="regions_0_ctl03_globalSearchPanel" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'regions_0_ctl03_btnGlobalSearch')">
+
+                            <legend>Search2</legend>
+                            <div class="formElement">
+                                <label for="regions_0_ctl03_KeywordEditableTextBox" id="regions_0_ctl03_lblSearchField"></label>
+
+                                <script language="javascript">
+                                    <!--
+                                    function pageLoad(sender, args)
+                                    {
+                                        $(".defaultText").focus(function (srcc) {
+                                            if ($(this).val() == $(this)[0].title) {
+                                                $(this).removeClass("defaultTextActive");
+                                                $(this).val("");
+                                            }
+                                        }); $(".defaultText").blur(function () {
+                                        if (($(this).val() == "") || ($(this).val() == $(this)[0].title)) {
+                                            $(this).addClass("defaultTextActive");
+                                            $(this).val($(this)[0].title);
+                                        }
+                                    }); $(".defaultText").blur();
+                                    };
+                                    //-->
+                                </script>
+
+                                <input name="regions_0$ctl03$KeywordEditableTextBox$TextBox" type="text" id="regions_0_ctl03_KeywordEditableTextBox_TextBox" class="defaultText  defaultTextActive" title="Search">
+
+
+                            </div>
+                            <input type="submit" name="regions_0$ctl03$btnGlobalSearch" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;regions_0$ctl03$btnGlobalSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="regions_0_ctl03_btnGlobalSearch" class="btn">
+
+                        </div>
+                    </fieldset>
+                </div>
+
+
+
+                <a class="btn3 goToMenuMobile" href="#mobil-container"><span></span></a>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="topNavigation">
+            <div class="wrapper clearfix">
+
+                <ul class="clearfix">
+                    <li class="">
+                        <div>
+                            <a href="/Copy of account-overview">
+                                Kontooversigt
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="active">
+                        <div>
+                            <a href="/product">
+                                Products
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="">
+                        <div>
+                            <a href="/account-overview">
+                                My Account
+                            </a>
+                        </div>
+                    </li>
+
+
+                    <li class="">
+                        <div>
+                            <a href="/order-status">
+                                Order tracking
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="">
+                        <div>
+                            <a href="/accounting">
+                                Invoice payment
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="">
+                        <div>
+                            <a href="/contact">
+                                Contact us
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="highlight">
+                        <div>
+                            <a href="/customer-care">
+                                Customer Care
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div id="main">
+    <div class="mainInner">
+        <div class="wrapper clearfix">
+            <div class="order-form grid-24">
+                <h1 class="order-form__heading">Online Order Form</h1>
+
+                <section class="order-form__section order-form__section--3cols clearfix">
+                    <h2 class="order-form__section__heading">Main Model</h2>
+
+                    <section class="order-form__input-block">
+                        <label for="order-form--family" class="order-form__label">Family:</label>
+                        <select name="family" id="order-form--family" class="order-form__select">
+                            <option value="alera" class="order-form__option">Alera</option>
+                            <option value="be" class="order-form__option">Be</option>
+                            <option value="dot" class="order-form__option">Dot</option>
+                            <option value="essence" class="order-form__option">Essence</option>
+                            <option value="lex" class="order-form__option">Lex</option>
+                            <option value="linx" class="order-form__option">LINX</option>
+                            <option value="live" class="order-form__option">Live</option>
+                            <option value="sparx" class="order-form__option">Sparx</option>
+                            <option value="vea" class="order-form__option">Vea</option>
+                            <option value="verso" class="order-form__option">Verso</option>
+                        </select>
+                    </section>
+
+                    <section class="order-form__input-block">
+                        <label for="order-form--technology" class="order-form__label">Technology:</label>
+                        <select name="technology" id="order-form--technology" class="order-form__select">
+                            <option value="5" class="order-form__option">5</option>
+                            <option value="7" class="order-form__option">7</option>
+                            <option value="9" class="order-form__option">9</option>
+                        </select>
+                    </section>
+
+                    <section class="order-form__input-block">
+
+                        <label for="order-form--shell-type" class="order-form__label">Shell type:</label>
+                        <select name="shell-type" id="order-form--shell-type" class="order-form__select">
+                            <option value="full-shell" class="order-form__option">Full Shell</option>
+                            <option value="half-shell" class="order-form__option">Half Shell</option>
+                            <option value="canal" class="order-form__option">Canal</option>
+                            <option value="cic" class="order-form__option">CIC</option>
+                            <option value="Canal" class="order-form__option">Canal</option>
+                            <option value="Flex-Vent" class="order-form__option">Flex-Vent</option>
+                            <option value="Open fit" class="order-form__option">Open fit</option>
+                            <option value="Skeleton" class="order-form__option">Skeleton</option>
+                            <option value="Micro-Mold" class="order-form__option">Micro-Mold</option>
+                        </select>
+                    </section>
+                </section>
+
+                <section class="order-form__section clearfix">
+                    <h2 class="order-form__section__heading">Select Side:</h2>
+                    <section class="order-form__input-block order-form__input-block--side">
+                        <input type="radio" name="side" value="left" class="order-form__input" id="order-form__side--leftear"/>
+                        <label for="order-form__side--leftear" class="order-form__side__label">
+                            <svg class="order-form__input-block__svg">
+                                <use class="ear--left" xlink:href="images/ear.svg#left"></use>
+                            </svg>
+                            Left
+                        </label>
+                    </section>
+
+                    <section class="order-form__input-block order-form__input-block--side">
+                        <input checked type="radio" name="side" value="binaural" class="order-form__input" id="order-form__side--binaural"/>
+                        <label for="order-form__side--binaural" class="order-form__side__label">
+                            <svg class="order-form__input-block__svg">
+                                <use class="ear--left" xlink:href="images/ear.svg#binaural-left"></use>
+                                <use class="ear--right" xlink:href="images/ear.svg#binaural-right"></use>
+                            </svg>
+                            Binaural
+                        </label>
+                    </section>
+                    <section class="order-form__input-block order-form__input-block--side">
+                        <input type="radio" name="side" value="right" class="order-form__input" id="order-form__side--rightear" />
+                        <label for="order-form__side--rightear" class="order-form__side__label">
+                            <svg class="order-form__input-block__svg">
+                                <use class="ear--right" xlink:href="images/ear.svg#right"></use></svg>
+                            Right
+                        </label>
+                    </section>
+                </section>
+
+                <section class="order-form__section clearfix" id="order-form__section--details">
+                    <h2 class="order-form__section__heading">Details:</h2>
+                    <div class="order-form__control-group clearfix order-form__control-group--left">
+
+                        <h3 class="order-form__control-group__header order-form__control-group__header--left">Left</h3>
+
+                        <section class="order-form__input-block">
+                            <label for="coupling-left" class="order-form__label"> Coupling</label>
+                            <input type="checkbox" name="coupling-left" id="coupling-left" class="order-form__input order-form__option" />
+                        </section>
+
+                        <section class="order-form__input-block">
+                            <label for="tube-retention-left" class="order-form__label">Tube retention</label>
+                            <select name="tube-retention-left" id="tube-retention-left" class="order-form__input order-form__select">
+                                <option value="single" class="order-form__option">Single</option>
+                                <option value="double" class="order-form__option">Double</option>
+                                <option value="none" class="order-form__option">None</option>
+                            </select>
+                        </section>
+
+                        <section class="order-form__input-block">
+                            <label for="vent-type-left" class="order-form__label">Vent type</label>
+                            <select name="vent-type-left" id="vent-type-left" class=" order-form__input order-form__select">
+                                <option value="low" class="order-form__option">Low</option>
+                                <option value="high" class="order-form__option">High</option>
+                                <option value="Medium" class="order-form__option">Medium</option>
+                            </select>
+                        </section>
+                    </div>
+
+                    <div class="order-form__control-group clearfix order-form__control-group--right order-form__control-group--disabled">
+                        <h3 class="order-form__control-group__header order-form__control-group__header--right">Right</h3>
+                        <div class="order-form__control-group__copy-values">
+                            <label class="order-form__label"><input checked type="checkbox"/> Same as left</label>
+                        </div>
+                        <section class="order-form__input-block">
+                            <label for="coupling-right" class="order-form__label"> Coupling</label>
+                            <input disabled type="checkbox" name="coupling-right" id="coupling-right" class="order-form__input order-form__option" />
+                        </section>
+
+                        <section class="order-form__input-block">
+                            <label for="tube-retention-right" class="order-form__label">Tube retention</label>
+                            <select disabled name="tube-retention-right" id="tube-retention-right" class="order-form__input order-form__select">
+                                <option value="single" class="order-form__option">Single</option>
+                                <option value="double" class="order-form__option">Double</option>
+                                <option value="none" class="order-form__option">None</option>
+                            </select>
+                        </section>
+
+                        <section class="order-form__input-block">
+                            <label for="vent-type-right" class="order-form__label">Vent type</label>
+                            <select disabled name="vent-type-right" id="vent-type-right" class="order-form__input order-form__select">
+                                <option value="low" class="order-form__option">Low</option>
+                                <option value="high" class="order-form__option">High</option>
+                                <option value="Medium" class="order-form__option">Medium</option>
+                            </select>
+                        </section>
+                    </div>
+
+                </section>
+
+                <section class="order-form__section clearfix">
+                    <h2 class="order-form__section__heading">Color:</h2>
+
+                    <div class="order-form__control-group clearfix order-form__control-group--left">
+
+                        <h3 class="order-form__control-group__header order-form__control-group__header--left">Left</h3>
+                        <section class="order-form__input-block order-form__color">
+
+                            <input checked type="radio" name="color-left" id="color-01-left" value="white" class="order-form__input order-form__color__input" />
+                            <label for="color-01-left" class="order-form__label order-form__color__label">Precious White
+                                <span class="order-form__color order-form__color__sample">
+                                    <img src="images/precious_white.jpg" class="order-form__color__sample__image" alt="">
+                                </span>
+                            </label>
+
+                        </section>
+                        <section class="order-form__input-block order-form__color">
+                            <input  type="radio" name="color-left" id="color-02-left" value="green" class="order-form__input order-form__color__input" />
+                            <label for="color-02-left" class="order-form__label order-form__color__label">
+                            Ruby Red
+                                <span class="order-form__color order-form__color__sample">
+                                    <img src="images/ruby_red.jpg" class="order-form__color__sample__image" alt="">
+                                </span>
+                            </label>
+                        </section>
+                        <section class="order-form__input-block order-form__color">
+                            <input  type="radio" name="color-left" id="color-03-left" value="silver"  class="order-form__input order-form__color__input"/>
+                            <label for="color-03-left" class="order-form__label order-form__color__label">
+                                Majestic Silver
+                                <span class="order-form__color order-form__color__sample">
+                                    <img src="images/majestic_silver.jpg" class="order-form__color__sample__image" alt="">
+                                </span>
+                            </label>
+
+                        </section>
+                        <section class="order-form__input-block order-form__color">
+                            <input  type="radio" name="color-left" id="color-04-left" value="black"  class="order-form__input order-form__color__input"/>
+                            <label for="color-04-left" class="order-form__label order-form__color__label">
+                                Precious Black
+                                <span class="order-form__color order-form__color__sample">
+                                    <img src="images/precious_black.jpg" class="order-form__color__sample__image" alt="">
+                                </span>
+                            </label>
+
+                        </section>
+                        <section class="order-form__input-block order-form__color">
+                            <input  type="radio" name="color-left" id="color-05-left" value="blue"  class="order-form__input order-form__color__input"/>
+                            <label for="color-05-left" class="order-form__label order-form__color__label">
+                                Dove Blue
+                                <span class="order-form__color order-form__color__sample">
+                                    <img src="images/dove_blue.jpg" class="order-form__color__sample__image" alt="">
+                                </span>
+                            </label>
+
+                        </section>
+
+                    </div>
+
+                    <div class="order-form__control-group clearfix order-form__control-group--right order-form__control-group--disabled">
+                        <h3 class="order-form__control-group__header order-form__control-group__header--right">Right</h3>
+                        <div class="order-form__control-group__copy-values">
+                            <label class="order-form__label"><input checked type="checkbox"/> Same as left</label>
+                        </div>
+                        <section class="order-form__input-block order-form__color">
+
+                            <input checked type="radio" name="color-right" id="color-01-right" value="white" class="order-form__input order-form__color__input" />
+                            <label for="color-01-right" class="order-form__label order-form__color__label">Precious White
+                                <span class="order-form__color order-form__color__sample">
+                                    <img src="images/precious_white.jpg" class="order-form__color__sample__image" alt="">
+                                </span>
+                            </label>
+
+                        </section>
+
+                        <section class="order-form__input-block order-form__color">
+                            <input  type="radio" name="color-right" id="color-02-right" value="green" class="order-form__input order-form__color__input" />
+                            <label for="color-02-right" class="order-form__label order-form__color__label">
+                                Ruby Red
+                                <span class="order-form__color order-form__color__sample">
+                                    <img src="images/ruby_red.jpg" class="order-form__color__sample__image" alt="">
+                                </span>
+                            </label>
+
+                        </section>
+                        <section class="order-form__input-block order-form__color">
+                            <input  type="radio" name="color-right" id="color-03-right" value="silver"  class="order-form__input order-form__color__input"/>
+                            <label for="color-03-right" class="order-form__label order-form__color__label">
+                                Majestic Silver
+                                <span class="order-form__color order-form__color__sample">
+                                    <img src="images/majestic_silver.jpg" class="order-form__color__sample__image" alt="">
+                                </span>
+                            </label>
+
+                        </section>
+
+                        <section class="order-form__input-block order-form__color">
+                            <input  type="radio" name="color-right" id="color-04-right" value="black"  class="order-form__input order-form__color__input"/>
+                            <label for="color-04-right" class="order-form__label order-form__color__label">
+                                Precious Black
+                                <span class="order-form__color order-form__color__sample">
+                                    <img src="images/precious_black.jpg" class="order-form__color__sample__image" alt="">
+                                </span>
+                            </label>
+
+                        </section>
+
+                        <section class="order-form__input-block order-form__color">
+                            <input  type="radio" name="color-right" id="color-05-right" value="blue"  class="order-form__input order-form__color__input"/>
+                            <label for="color-05-right" class="order-form__label order-form__color__label">
+                                Dove Blue
+                                <span class="order-form__color order-form__color__sample">
+                                    <img src="images/dove_blue.jpg" class="order-form__color__sample__image" alt="">
+                                </span>
+                            </label>
+                        </section>
+                    </div>
+                </section>
+
+                <section class="order-form__section clearfix" id="order-form__section--audiogram">
+                    <h2 class="order-form__section__heading">Audiogram:</h2>
+                    <div class="order-form__control-group clearfix order-form__control-group--left">
+
+                        <h3 class="order-form__control-group__header order-form__control-group__header--left">Left</h3>
+                        <svg class="order-form__section--audiogram__svg" viewBox="0 0 400 300">
+                            <use class="audiogram-grid" xlink:href="images/graph.svg#grid"></use>
+                            <use class="ear--left" xlink:href="images/graph.svg#graph2"></use>
+                        </svg>
+
+                    </div>
+
+                    <div class="order-form__control-group clearfix order-form__control-group--right order-form__control-group--disabled">
+                        <h3 class="order-form__control-group__header order-form__control-group__header--right">Right</h3>
+                        <div class="order-form__control-group__copy-values">
+                            <label class="order-form__label"><input checked type="checkbox"/> Same as left</label>
+                        </div>
+
+                        <svg class="order-form__section--audiogram__svg" viewBox="0 0 400 300">
+                            <use class="audiogram-grid" xlink:href="images/graph.svg#grid"></use>
+                            <!--<use class="ear&#45;&#45;right" xlink:href="images/graph.svg#graph1"></use>-->
+                            <use class="ear--right" xlink:href="images/graph.svg#graph2"></use>
+                        </svg>
+
+                    </div>
+
+                </section>
+
+                <section class="order-form__section clearfix" id="order-form__section--instructions">
+                    <h2 class="order-form__section__heading">Special instructions:</h2>
+                    <p class="order-form__section__description">
+                        Please write if you have any special instructions
+                    </p>
+                    <textarea class="order-form__textarea" name="instructions" id="order-form__instructions" cols="30" rows="10">
+
+                    </textarea>
+
+                </section>
+
+                <section class="order-form__section clearfix" id="order-form__section--customer-information">
+                    <h2 class="order-form__section__heading">Customer information:</h2>
+                    <section class="order-form__input-block">
+                        <label for="order-form--firstname" class="order-form__label">First Name:</label>
+                        <input type="text" id="order-form--firstname" name="firstname">
+                    </section>
+
+                    <section class="order-form__input-block">
+                        <label for="order-form--lastname" class="order-form__label">Last Name:</label>
+                        <input type="text" id="order-form--lastname" name="lastname">
+                    </section>
+
+                </section>
+
+
+                <section class="order-form__section clearfix" id="order-form__section--submit">
+
+                    <button class="order-form__button--next btn1" href="#link">
+                        Next
+                    </button>
+
+                </section>
+
+             </div>
+         </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

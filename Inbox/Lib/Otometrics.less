@@ -1,0 +1,923 @@
+/*COLORS*/
+@color01: #f8f8f8;	/*light grey footer background*/
+@color02: #d71920;	/*red*/	
+@color03: #1A171B;  /*font color*/
+@color04: #434343;  /*topmenu border */
+@color05: #D0D0D0;	/*grey*/
+@color06: #999;		/*dark grey*/
+@color07: #ebebeb;	/*light grey*/
+@color08: #666;		/*footer color*/
+@color09: #DFDEDE;	/*button background*/
+@color10: #3b3b3b;  /*topmenu border */
+@color11: #7f7f7f;	/*breadcrumb / productpage color*/
+@color12: #434343;  /* top menu border */
+@color13: #000;  /* top menu background */  
+@boxshadow: #bdbdbd;
+
+/*otometrics farver*/
+
+@color16: #0062a1; /*top nav blue*/
+@color17: #D4D700; /*breadcrumb green*/
+@color18: #F6F6F6; /*second nav light grey*/
+@color20: #6696c6; /*border blue*/
+@color21: #98d80e; /*border green*/
+@color22: #af64a1; /*border purple*/
+@color23: #c5db95; /*light green*/
+@color24: #A7B8C9; /*light blue*/
+
+
+/* 
+----------------------------------------------------------------------------------------------------*/
+@bodyFont:Arial, sans-serif; 
+@headingFont:Arial, sans-serif;
+@icons: url('gfx/Otometrics/sprite-icons.png') no-repeat;
+@arrows: url(gfx/Otometrics/arrows.png) no-repeat;
+
+
+/* GENERELT
+----------------------------------------------------------------------------------------------------*/
+body{
+	background: @color16;
+	color:@color03; 
+	font-size: 0.875em; 
+	line-height: normal;
+	&.fontLarge{
+		font-size:1em;   
+		h1{
+			font-size:1.5625em;	
+		}
+		h2, .secondNavHead{
+			font-size:1.3125em;
+		}
+		.flexslider .slides .element .image-description .description-title{
+			font-size:2em;
+		} 
+	}
+}
+::-moz-selection { background: @color02; }
+::selection { background: @color02; }
+a { color: @color03; text-decoration:none;
+	&:hover{text-decoration:underline;}
+	&:visited { color: @color03  }
+	&:focus {  }
+	&:hover, &:active {  }
+}
+.accessibility {
+	color: @color06;
+}
+
+/* IMPORTS
+----------------------------------------------------------------------------------------------------*/
+@import "base.less";
+@import "styles.less";
+
+.wrapper{
+	background: #fff;
+	padding: 0 62px;
+	width: auto;
+}
+.contextPos {
+	margin-top: -20px;
+}
+.box{ 
+	border-color: #D0D0D0; 	
+	.box-shadow(none);
+	border-width:1px;
+}
+
+/* FONTS
+----------------------------------------------------------------------------------------------------*/
+h1,h2,h3,h4,h5,h6,.shortintro, .Paging li{
+	font-family:@bodyFont;
+	font-weight:700;
+	line-height:normal;  
+}
+h1{
+	color:@color03;
+	font-size:1.7857em;
+	font-weight:100; 
+	margin-bottom:17px;
+	margin-top:0;
+}
+h2{
+	font-size:1.5em;
+	margin-bottom:10px;
+}
+h3, h4, h5, h6{
+	font-size:1em; /*16px*/
+	margin-bottom:11px;
+}
+
+h5{
+	font-size:0.83em; /*14px*/
+}
+h6{
+	font-size:0.67em; /*13px*/
+}
+.shortintro{
+		font-size: 1em;
+		font-weight:100;
+		margin-bottom: 23px;
+}
+.link{
+	color: @color03;
+	&:hover{
+		background-position: 0 0;
+	}
+}
+
+/* LINKLIST
+----------------------------------------------------------------------------------------------------*/
+.linkList{
+	li{
+		a{
+			background-position: 0 0;
+			&:hover{
+				background-position: -984px 0;
+				color: @color03;
+			}
+		}
+	}
+}
+
+/* NOTIFY
+----------------------------------------------------------------------------------------------------*/
+.notifyContainer a, .notifyContainer a:visited {
+	color: @color07;
+}
+
+/* INPUTS
+----------------------------------------------------------------------------------------------------*/
+.btn1, .btn3, .btn4, input[type='submit'], input[type='button'], .dropdownmenu > a{          
+		color: @color03;  
+		.border-radius(8px);
+		&:hover, &:visited{
+			color: @color03;
+		}
+}
+
+.btn1, input[type='submit'].btn1,
+.btn4, input[type='submit'].btn4{   
+	color: #fff;  
+	&:hover{
+		color: #fff;
+	}
+}
+
+
+/* Pager
+----------------------------------------------------------------------------------------------------*/
+.pagerSection{
+	.pager{  
+		.nextButton a{
+			background-position: -10987px 0px;
+			&:hover{
+				background-position: -9985px 0;
+			}
+		} 
+		.previousButton a {
+			background-position: -15985px 0px;
+			&:hover{
+				background-position: -14985px 0;
+			}
+		}
+		.previousButton,.nextButton{
+			margin-top: -1px;
+			width: 19px;
+			a{
+				height:19px;
+				width:19px;
+			}
+		} 
+	}
+}
+/* Top
+----------------------------------------------------------------------------------------------------*/
+#top{
+	background: none;    
+	.inner{
+		background: none;       
+		padding-top: 0;
+		.wrapper{
+			padding-top: 11px; 
+		}
+	}  
+	.topMenuWrapper{
+		padding-top:10px;
+		.topSearch{
+			padding-bottom: 12px;
+		}
+		.flags{  		
+			padding-bottom: 12px;
+			.btn3{  
+				width: auto;		
+				padding-left:36px;
+				> span.flag{
+					position: relative;
+					left: 0;
+					top: 2px;
+				}
+			}   		
+		}
+	}	 
+	.topNavigation{
+		background: transparent; 
+		margin-top: 0;
+		.wrapper{
+			background: #000;
+			padding-top: 0;
+		}
+		ul{     
+			margin-bottom: 0;
+			li{   
+				border:none;       
+				&.active, &.active:hover{           
+					a{
+						background: @color16;             
+					}
+				}             
+				a{                    
+					font-family: @bodyFont;
+					font-size: 0.92857em; 
+					font-weight:700;        
+					padding: 4px 16px 3px;
+					&:hover{
+						background: @color16;         
+					}
+				}
+			}
+		} 		
+	}	
+	.sectionnavigation{ 
+		background: @color16;    
+		margin-bottom: 0;
+		top: 0;
+		ul{  
+			padding: 1px 0 12px;      
+			li{   
+				margin-top: 11px;   
+				a{     
+					&:hover{
+						background-position:0 0;
+						color: @color03;
+					}
+				}
+			}
+		}
+	}
+}
+
+.flagDropdownmenu {
+	top: 56px;
+}
+
+/* BreadcrumblessShadowBottomIE
+----------------------------------------------------------------------------------------------------*/
+.breadcrumb{
+	color: @color17;
+	margin-bottom: 3px;
+	> span{
+		color:@color11;    
+	}    
+	ul{       
+		li{
+			background:@arrows -6997px 1px;     
+			a{        
+				color:@color11;       
+				&:hover{
+					color:@color17;
+				}
+			}
+		}
+	}
+}
+
+/* Main
+----------------------------------------------------------------------------------------------------*/
+#main{
+	background: none;
+	.mainInner{
+		background: none;
+		padding: 0;
+	}
+	.fontSize, a.share{
+		display: none;
+	} 
+	.frontpage{
+		padding-top: 20px;
+	}
+}
+/* Second menu
+----------------------------------------------------------------------------------------------------*/
+.secondNav{  	
+ > div{
+		background:url(gfx/gradient-top.png) repeat-x 0 top @color18;
+		.box();
+		margin: 0 20px 0 8px;
+		overflow: hidden;    
+		padding: 27px 15px 0;
+		position: relative;
+ }
+	.secondNavHead{   
+		display:none;
+	}
+	ul{ 
+		li{
+			margin-bottom:13px;     
+			&.parent{
+				> a{       
+					color:@color03; 
+					margin-bottom:0;
+					padding-bottom: 4px;
+					&:hover{
+						background-position:-9001px 0;
+					}   
+				}
+				ul{
+					padding-bottom: 9px;
+					li.active a{
+						background-position:-6997px 0;
+						font-weight:100;
+					}
+				} 
+			}
+			&.active{
+				> a{  
+					background-position:-9983px 0;
+					color:@color03;  
+					text-decoration:underline;                  
+				}
+				ul{
+					padding-bottom: 9px;          
+				} 
+			}     
+			a{
+				background:@arrows -10985px 0;              
+				font-size:1.0714em;
+				font-weight:700;
+				margin-bottom: 0;
+				padding:0 0 8px 30px;
+				&:hover{
+					background-position:-9983px 0;
+					color:@color03; 
+				}
+			}
+			ul{ 
+				li{
+					margin-bottom:0;
+					&.active a{
+						background-position:-11997px 0;
+					}        
+					a{       
+						color: @color08;
+						font-weight:100; 
+						margin-bottom:0;
+						padding-bottom: 4px; 
+						padding-left: 12px;   
+						&:hover{
+							background-position:-6997px 0;
+						}                      
+					}             
+				}
+			}
+		}
+	}
+}
+
+/* Worldwide Distributors
+----------------------------------------------------------------------------------------------------*/
+.locations .ContryWrapper ul li a{
+	background-position: 0 0;
+	&:hover{
+		background-position: -984px 0;
+	}
+}
+/* Sitemap
+----------------------------------------------------------------------------------------------------*/
+.sitemapMainSections .sitemapMainSection ul li a{    
+	background-position: 0 0;
+	&:hover{
+		background-position: -984px 0;
+	}
+}
+
+/* Produktpage
+----------------------------------------------------------------------------------------------------*/
+.productPage .toTop{  
+	background-position: -20984px 3px;
+	font-family: @bodyFont;
+}
+
+/* Product gallery
+----------------------------------------------------------------------------------------------------*/
+.productGallery{
+	.mainNav{		
+		.productGalleryNav{									
+			.productGalleryNavInner{						
+				> ul{									
+					> li{	
+						.mainNavLink{														
+							.border-radius(0);	
+							.innerContent{							
+								.border-radius(0);	
+							}			
+						}
+						&.active{							
+							> a{
+								color:@color16;
+							}
+							.mainNavLink{	
+								border-color: @color16;									
+							}							
+						}									
+					}
+				}
+			}
+			.filterNav {												
+				ul{																	
+					> li{						
+						a{
+							color: @color06;										
+						}					
+						&.active a, &:hover a{
+							color: @color16;														
+						}
+					}
+				}
+			}	
+		}
+	}	
+}
+
+/* Flexslider
+----------------------------------------------------------------------------------------------------*/
+.flexslider .slides .element{
+	a.link:hover{                 
+		color: #fff;
+	}
+	&.dark a.link{                  
+		color:@color03;                        
+		&:hover{
+			background-position: 0 1px;
+		}
+	}    
+	a.btn1{		
+		color: #fff
+	}    
+	.image-description{
+		.description-title, .body {
+			font-family: @bodyFont;
+		}
+		.body{
+			font-size: 1em;
+		}
+	}  
+}
+	
+
+/* Tabsspot
+----------------------------------------------------------------------------------------------------*/
+.tabsGrid{			
+	ul.featurelist{
+		background:url(gfx/Otometrics/topNavGradient.png) repeat-x 0 0; 
+		li{
+			border: none;
+			&.active, &.active:hover{						
+				a{
+					background: @color16;
+				}
+			}					
+			a{					
+				span{
+					font-family: @bodyFont;
+					font-size: 0.92857em;
+					font-weight: 700;
+					padding: 4px 16px 3px;
+				}
+				&:hover{
+					span{
+						background: @color16;					
+					}
+				}
+			}
+		}
+	}	
+}
+
+/* Context elements
+----------------------------------------------------------------------------------------------------*/
+.contextElements .context{  
+	&.promo{
+		> a{ 
+			height: auto;
+		}
+	}
+}
+
+.context{  
+	margin-bottom: 13px;
+	.ie7 &, .ie8 &{ 		
+		.box-shadow(none);
+	}
+	.textContainer h2{
+		font-weight: 100;
+	}
+	&.promo{
+		background: url(gfx/Otometrics/factLightGradient.png) repeat-x @color20;		
+		border-color: @color20; 
+		height: 166px;
+			&:hover{
+				background: @color20;
+				border-color: @color20;
+			}
+		> a{ 
+			height: 129px;
+			h2{
+				font-weight: 100;
+				max-height: 52px;
+				width: 47%;
+			}
+			.imgContainer img{
+				bottom: auto;
+				top:0;
+			}  
+			.textContainer .mainText {
+				min-height: 47px;
+			}          
+			&:hover{        
+				.link{
+					background-position: 0 1px;
+				}
+			}
+		}
+	}
+	&.fact{    
+		background: url(gfx/Otometrics/factLightGradient.png) repeat-x @color21;
+		border-color: @color21; 
+		a{
+			background: none;
+		}
+		&:hover{
+			background: @color21;
+			border-color: @color21;
+			.link{
+				background-position: 0 1px;
+			}
+		}      
+		&.black{
+			background: url(gfx/Otometrics/factLightGradient.png) repeat-x @color22;
+			border-color: @color22;
+			a{
+				background: none;
+				.textContainer{
+					color: @color03;
+					h2{
+						color: @color03;
+					}
+					.link{
+						color: @color03;
+					}
+				}
+			}
+			.link{
+				background-position: -17983px 1px;       
+			} 
+			&:hover{
+				background: @color22;
+				 .link{
+					background-position: -17983px 1px;
+					color: #fff;  
+				} 
+			}
+		}      
+	}  
+	&.productSpot{
+		&:hover{   
+			.link{
+				background-position: -0 1px;
+			}
+		}
+		a{
+			height: 159px;
+			.textContainer{
+				padding-bottom: 8px;
+			}
+		}
+	}
+	&.dropdownLinkSpot{
+		height: 166px;
+	}
+	&.boxModel{   
+		border-color: #fff;   
+		&.g100{
+			.text{
+				.textContainer{
+					h3{
+						font-family: @bodyFont;        
+						margin-bottom: 0;
+						margin-right: 0;
+					}
+					.textWrapper {
+						font-family: @bodyFont !important;
+						font-size: 1em;
+					}
+				}
+				&:first-child{
+					width: 100%;
+				}
+			} 						
+		} 
+	}
+	&.readmoreBox{
+		min-height: 166px;
+		&.black {
+			.textContainer .mainText a{
+				background: url(gfx/Otometrics/arrows.png) no-repeat -16986px 1px;
+				display: block;
+				padding: 0 0 0 24px;
+				&:hover{
+					background-position: -16983px 1px;
+				}
+			}		
+		}
+		.textContainer .mainText a{
+			background: url(gfx/Otometrics/arrows.png) no-repeat -2px 0;
+			display: block;
+			padding: 0 0 0 24px;
+			&:hover{
+				background-position: -986px 0;
+			}
+		}		
+	}
+}
+.bottombox, .bottomBoxGrid, .contentboxGrid{
+	.context.boxModel{   		
+		&.g33, &.g50{
+			height: 202px;
+			border: 1px solid @color05;
+			.img{
+				height: 109px;
+				overflow: hidden;
+			}
+			.text .textContainer{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		} 
+	}
+}
+.story .context.boxModel.g100 .text .textContainer .textWrapper {
+	font-family: @bodyFont !important;
+	font-size: 1em;
+}
+
+/* Rich Text Editor
+----------------------------------------------------------------------------------------------------*/
+
+.bulletpoint{
+	background: @arrows;
+	padding-left: 17px;
+	background-position: -2px -1px;
+}
+	
+/* Footer
+----------------------------------------------------------------------------------------------------*/
+#pageBottom{
+	background-color: transparent;
+	background-position: 0 -6px;
+	background-image: none;
+	margin-top: 0;
+	padding-top: 16px;
+	#footer{
+		background-color: transparent;
+		background-image: none;
+		margin: 0;
+		padding: 16px 0 0 0;
+		.wrapper{
+
+		}
+		li{
+			font-weight: 700;
+			a, a:hover {
+				color: @color03;    
+			}
+		} 
+	}   
+	.linkList{
+		.wrapper{
+			background-color: white;
+
+		}
+		background: transparent;
+		.innerContent > ul ul a{
+			&:hover{
+				color: @color03;
+			}
+		} 
+	}
+}
+
+@media screen and (max-width: 1127px) {	
+	.wrapper {
+		padding: 0;
+	}
+}
+@media screen and (max-width: 919px) {	
+	.contextPos {
+		margin-top: 0;
+	}
+	#top{
+		.topSearch {	
+			clear: both;
+		}	
+	} 
+	.flagDropdownmenu {
+		top: 94px;
+	}
+}
+@media screen and (max-width: 769px) {  
+	#top{   	
+		.logo{
+			overflow: hidden;
+			width: 285px;
+			img{
+				height: 44px;
+				width: auto;
+			}
+		}		    		
+		.topMenuWrapper{
+			font-size: 0.8571428571428571em;
+			padding-top: 0;
+			.flags .btn3 > span.flag{
+				display: none;
+			}	
+			.topSearch{
+				margin: 0;
+				padding: 0;
+			}	
+		}		
+	}
+	.mobil-container .topNavigation ul li a{
+		font-size: 1.142857142857143em;		
+	}
+	.secondNav{		
+		padding-top: 15px;
+		> div{
+			background: #F6F6F6;	
+			margin: 0 8px;
+			padding: 0;
+		}
+		.secondNavHead{
+			+ ul{
+				padding: 0;
+				margin: 0;
+			}
+		}
+		ul{
+			margin: 0;
+			li{
+				margin-bottom: 0;
+				&.active{
+					ul{
+						padding-bottom: 0;
+					}
+					> a {
+						background-position: -10984px 9px;
+						background-color: @color20;
+						color: #fff;			
+						text-decoration: none;			
+					}
+				} 
+				&.parent{
+					ul{
+						padding-bottom: 0;
+					}
+					> a{
+						background-position: -8998px 10px;
+						&:hover{
+							background-position: -8998px 10px;			
+						}
+					}
+					ul li{					
+						&.active a {
+							background-position: -4978px 11px;
+							background-color: @color20;				
+						}
+					}
+				}
+				a{
+					background-position: -10984px 9px;
+					border-top: none;
+					border-color: @color20;
+					font-family: @bodyFont;
+					font-size: 1em;
+					font-weight: 100;
+					padding-bottom: 8px !important;
+					padding-top: 10px !important;
+					text-decoration: none;
+					&:hover{
+						background-position: -10984px 9px;	
+						background-color: @color20;	
+						color: #fff;	
+					}
+				}
+				ul li{	
+					&.parent{
+						> a{
+							background-position: -8998px 10px;							
+							&:hover{
+								background-position: -8998px 10px;			
+							}
+						}
+					}		
+					a {
+						background-position: -6978px 10px;
+						font-family: @bodyFont;
+						padding-left: 30px;
+						&:hover{
+							background-position: -4978px 10px;
+						}
+					} 
+				}
+			}
+		}
+	}
+	.flagDropdownmenu {
+		top: 63px;
+	}
+}
+
+/*Ipad portrait mode*/
+@media screen and (min-width: 531px) and (max-width: 769px){
+	/*Ipad menu*/
+	.mobil-container{				
+		.topNavigation{
+			ul{	
+				ul li a{
+					padding-top: 14px;
+				}
+				a{ font-family: Arial, sans-serif;}			
+				&.level1{
+					> li{
+						&.active > a{ background: @color16;}
+						&:last-child{ border-color: @color04;}
+						> a{
+							font-family: Arial, sans-serif;
+							font-weight: 700;
+						}
+					}
+				} 	
+				&.level2, &.level3, &.level4, &.level5, &.level6, &.level7, &.level8{
+					border-color: @color04;
+					> li{
+						&.active > a{
+							background-color: @color16;
+							background-image: url(gfx/arrows.png);							
+						}
+					}
+				} 								
+			}			
+		} 
+	}
+}	
+
+@media screen and (max-width: 530px) {
+	#top{		
+		.logo{
+			overflow: hidden;
+			top: 4px;
+			width: 155px;
+			img{
+				height: auto;
+				width: 265px;
+			}
+		}			
+	}
+	/* Mobil menu
+	----------------------------------------------------------------------------------------------------*/
+	.mobil-container{		
+		padding-bottom: 0;
+		ul{
+			&.level1{ border: 1px solid #000;}			
+			&.level1, &.level2, &.level3, &.level4, &.level5, &.level6, &.level7, &.level8{
+				> li.active > a{					
+					background-color: @color17;					
+					color: #000;
+				}				
+			}			
+			&.level1 > li.active > a{ background-position: -6988px 12px;}					
+			&.level2 > li.active > a{ background-position: -6968px 12px;}					
+			&.level3 > li.active > a{ background-position: -6948px 12px;}	
+			&.level4 > li.active > a{ background-position: -6928px 12px;}		
+			&.level5, &.level6, &.level7, &.level8{
+				> li.active > a{
+					background-position: -6908px 12px;					
+				}
+			}					
+		}
+	}	
+	.flagDropdownmenu{	
+		top: 113px;	
+		width: auto;
+	}
+}

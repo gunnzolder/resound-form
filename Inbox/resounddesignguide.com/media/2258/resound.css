@@ -1,0 +1,10 @@
+/* line 1, ../sass/resound.scss */
+body {
+  font-family: verdana, sans-serif;
+}
+
+/* line 5, ../sass/resound.scss */
+.nav .nav-container .nav-element {
+  border: 0;
+  margin: 1px;
+}

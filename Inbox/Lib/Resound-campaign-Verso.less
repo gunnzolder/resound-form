@@ -1,0 +1,254 @@
+/*COLORS*/
+@color01: #f8f8f8;  /*light grey footer background*/
+@color02: #00aee3;  /*10*/  
+@color03: #333;  /*font color*/
+@color04: #434343;  /*topmenu border */
+@color05: #D0D0D0;  /*grey*/
+@color06: #999;     /*dark grey*/
+@color07: #ebebeb;  /*light grey*/
+@color08: #666;     /*footer color*/
+@color09: #DFDEDE;  /*button background*/
+@color10: #3b3b3b;  /*topmenu border */
+@color11: #7f7f7f;  /*breadcrumb / productpage color*/
+@color12: #434343;  /* top menu border */
+@color13: #000;  /* top menu background */  
+@red:#d71920;
+@boxshadow: #d6d6d6;
+
+
+/*otometrics farver*/
+@color16: #0b6493;
+@color17: #005694;
+@color18: #fbfbfb;
+@color19: #858585;
+@color20: #1996fe;
+
+/* 
+----------------------------------------------------------------------------------------------------*/
+@bodyFont:Verdana, sans-serif; 
+@headingFont: 'HelveticaNeueLight';
+@icons: url('gfx/sprite-icons.png') no-repeat;
+@arrows: url(gfx/Campaign/arrows.png) no-repeat;
+
+/* GENERELT
+----------------------------------------------------------------------------------------------------*/
+body {   
+	background:url(gfx/verso/blus-bg.png) repeat-x top #ffffff;
+	color:@color03; 
+	font-size: 0.75em;
+	line-height: 1.333em;
+	&.fontLarge{
+		font-size:0.875em;	
+		h1{
+			font-size:2.5em;	
+		}
+		h2{
+			font-size:1.5em;
+		}
+		h3, h4, h5, h6{
+			font-size:1.1428em; /*16px*/
+		}
+		.flexslider .slides .element .image-description .description-title{
+			font-size:2em;
+		}
+	}
+}
+::-moz-selection { background: @color02; }
+::selection { background: @color02; }
+a { color: @color02; text-decoration:none;
+	&:hover{text-decoration:underline;}
+	&:hover { color: @color02; }  	
+}
+.accessibility {
+	color: @color06;
+}
+
+
+/* IMPORTS
+----------------------------------------------------------------------------------------------------*/
+@import "base.less";
+@import "styles.less";
+
+/*Font
+----------------------------------------------------------------------------------------------------*/
+h2, h3, h4, h5, h6{
+	color: @color16;
+}
+.link{
+	background-position: -984px 0;
+}
+
+/*Box
+----------------------------------------------------------------------------------------------------*/
+.box{
+	border: none;
+	.box-shadow(none);
+}
+
+/* Top
+----------------------------------------------------------------------------------------------------*/
+#top{
+	.inner{
+		background: none;
+	}			 	
+}
+/*bottom
+----------------------------------------------------------------------------------------------------*/
+#pageBottom{
+	margin-top:0;
+	padding-top:0;
+}
+/* Topnavigation
+----------------------------------------------------------------------------------------------------*/
+.topNavigation ul{
+	margin-bottom: 0;
+}
+
+/* Main
+----------------------------------------------------------------------------------------------------*/
+#main{
+	background: url(gfx/verso/blue-bg.png) repeat-x 0 0;
+	min-height: 747px;
+	.mainInner{
+		background: url(gfx/verso/blue-flower.png) no-repeat right 0;
+		padding: 0;
+		> .wrapper{
+			padding-bottom: 8px;
+			padding-top: 8px;
+		}
+	}
+}
+
+/* Context elements
+----------------------------------------------------------------------------------------------------*/
+.youtube-player{
+	max-width:740px!important;
+}
+
+.context{ 
+	background-color:transparent;  
+	&.boxModel{		
+		border: none;
+		padding: 0;		
+		.seeMore, .seeLess, .link{
+			margin-top: 6px;
+		}
+		.text{
+			.textContainer{
+				h3{
+					color:#000;
+				}
+				.link{
+					a{
+						
+					}
+				}
+			}
+		}
+		&.g100{
+			.text{
+				.textContainer{					
+					h3{
+						display: inline;
+						margin-right: 0;					
+					}							
+					.textWrapper{
+					    display: inline;
+					    font-family: 'HelveticaNeueRoman';
+					    font-size: 1.3333em;
+					    line-height: 1.25em;
+					}	
+					.link{
+						display: block;
+					}		
+				}
+			}
+		}
+	}
+}
+
+.context{
+	margin-bottom: 32px;
+}
+
+
+body .download{
+	span{
+		display: block;		
+	}
+}
+.download{
+	span{
+		display: block;		
+	}	
+	a{
+		display: block;
+		width: auto;
+	}
+	&.small-btn{		
+		margin-bottom: 52px;
+		text-align: right;
+		span{
+			display: inline-block;		
+			*display: inline; /*ie7 hack*/
+			zoom: 1;
+		}	
+		a{		
+			display: inline-block;		
+			*display: inline; /*ie7 hack*/
+			zoom: 1;				
+			width: auto;
+		}
+	}
+	a{		
+		background-image: url('gfx/Verso/sprite-button.png');
+		background-color: #01b7ce;
+		border-color: #009099;
+		color:#ffffff;
+		font-family: 'HelveticaNeueMedium';
+		font-weight: 100;
+		font-size: 2em;
+		line-height: 26px;
+		margin: 0 9px;
+		padding: 13px 11px 9px;		
+		&:hover{
+			background-color: #01b7ce;
+			border-color: #01b7ce;
+		}	
+	}
+}
+
+h1.bodyContent{
+	background: url(gfx/Verso/Logo-pink.png) no-repeat 10px 0;
+	color: #fff;
+	display: block;
+	font-size: 54/12em;
+	padding-top: 24px;
+}
+.bodyContent h2{
+	font-family: 'HelveticaNeueLight';
+	font-size: 35/12em;
+	font-weight: 100;
+	margin-bottom: 32px;
+	margin-top: 0;
+}
+h2, h3, h4, h5, h6{
+	color: #0b6493;
+}
+
+@media screen and (max-width: 1032px) {
+  	/*red*/
+}
+@media screen and (min-width: 770px) and (max-width: 919px) {
+  	/*blue*/
+}
+@media screen and (max-width: 769px) {  
+	/*purple*/	
+	#top{
+		padding-bottom: 10px;	
+	}
+}
+@media screen and (max-width: 530px) {
+	/*Orange*/			
+}
+
