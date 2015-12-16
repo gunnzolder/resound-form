@@ -68,12 +68,20 @@
         this.shellType = (input.shellTypes)?input.shellTypes.value : false;
     }
 
-    function makeFilterValues(container) {
+    function getFilterValues(container) {
         return new filterValuesClass({
             families : document.querySelector(container+'--families input:checked'),
             technologies : document.querySelector(container+'--technologies input:checked'),
             shellTypes : document.querySelector(container+'--shell-types input:checked'),
         });
+    }
+
+    function setFilterValues(filterValues) {
+        document.getElementById('family-'+filterValues.family).checked =
+        document.getElementById('technology-'+filterValues.technology).checked =
+        document.getElementById('shell-type-'+filterValues.shellType).checked = true;
+        console.log(filterValues);
+        $('#shell-type-'+filterValues.shellType).trigger('change');
     }
 
     /* RENDER THE CONTROLS */
@@ -95,7 +103,7 @@
         $( options.target + " input").change(function(){
             $(options.target + " input["+options.highlightAttribute+"]").removeAttr(options.highlightAttribute);
 
-            var filterValues = makeFilterValues(options.inputBlock);
+            var filterValues = getFilterValues(options.inputBlock);
 
             console.log(filterValues);
 
@@ -121,25 +129,31 @@
                 $('#'+thisId).trigger('change');
             } else if (indexes.length == 1) {
                 var changedConfig = data[indexes[0]].configName;
-                switchControls(changedConfig);
+                switchControls(changedConfig, filterValues);
             }
         });
     }
 
+
+
     /* SWITCH THE CONTROLS BELOW */
-    function switchControls(configName){
+    function switchControls(configName, filterValues){
 
         /* TODO: do something here!
          *
-         * configName =>
+         * configName => new config to pass somewhere;
+         * setFilterValues(filterValues) => sets filters according to the data:
+         *
+         * setFilterValues({family: "Enzo2", technology: "Top", shellType: "CIC"});
          *
          * */
 
-        console.log(configName);
+        console.log(configName, filterValues);
     }
 
     /* TRIGGER THE STUFF */
     renderControls(FILTER_OPTIONS);
     handleDependencies(FILTER_OPTIONS);
+
 
 })(jQuery);
