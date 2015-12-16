@@ -11525,6 +11525,13 @@ div.eBusiness .productDescription {
 .order-form__input-block__svg use.ear--right {
   fill: #d71920;
 }
+.order-form__input-block--main-model__label {
+  opacity: .6;
+}
+.order-form__input-block--main-model input[data-available] ~ label {
+  opacity: 1;
+  font-weight: bold;
+}
 .order-form__input-block--side {
   width: 80px;
   text-align: center;
@@ -11668,7 +11675,7 @@ div.eBusiness .productDescription {
     box-sizing: border-box;
     margin: 0 1% 16px 0;
   }
-  .order-form__control-group--right:not(.order-form____control-group--single) {
+  .order-form__control-group--left:not(.order-form____control-group--single) {
     margin-left: 1%;
     margin-right: 0;
   }

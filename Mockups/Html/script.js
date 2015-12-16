@@ -17,9 +17,7 @@
         }
     }
 
-
     var sideSelectors = document.querySelectorAll('input[name="side"]');
-    console.log(sideSelectors);
 
     for (var i = 0; i < sideSelectors.length; i++) {
         sideSelectors[i].addEventListener('change', showSide);
@@ -50,13 +48,11 @@
         }
     }
 
-
     var leftInputs = $('[id$=-left]');
 
     for (var i = 0; i < leftInputs.length; i++) {
         leftInputs[i].addEventListener('change', doTheSame);
     }
-
     function doTheSame(e) {
         var copyHandler = $(e.target)
             .closest('.order-form__section')
@@ -69,8 +65,6 @@
             if (e.target.type == 'checkbox' || e.target.type == 'radio') {
                 document.getElementById(targetId).checked = e.target.checked
             } else {
-                console.log(targetId);
-                console.log(e.target.value);
                 document.getElementById(targetId).value = e.target.value;
             }
         }
@@ -78,5 +72,4 @@
 
 
     }
-
 })(jQuery);

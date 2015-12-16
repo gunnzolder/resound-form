@@ -1,0 +1,80 @@
+[
+  {
+    "configName": "IIC Configuration",
+    "family": "LiNX2",
+    "techLevel": "Top",
+    "shellTypes": ["IIC","CIC","MIH","ITC","ITE"]
+  },
+  {
+    "productName": "LiNX2 7",
+    "family": "LiNX2",
+    "techLevel": "Normal",
+    "shellTypes": ["IIC","CIC","MIH","ITC","ITE"]
+  },
+  {
+    "productName": "LiNX2 5",
+    "family": "LiNX2",
+    "techLevel": "Budget",
+    "shellTypes": ["IIC","CIC","MIH","ITC","ITE"]
+  },
+  {
+    "productName": "Enzo2 9",
+    "family": "Enzo2",
+    "techLevel": "Top",
+    "shellTypes": ["IIC","CIC","MIH","ITC","ITE"]
+  },
+  {
+    "productName": "Enzo2 7",
+    "family": "Enzo2",
+    "techLevel": "Normal",
+    "shellTypes": ["IIC","CIC"]
+  },
+  {
+    "productName": "Enzo2 5",
+    "family": "Enzo2",
+    "techLevel": "Budget",
+    "shellTypes": ["IIC","CIC","MIH","ITC","ITE"]
+  },
+  {
+    "productName": "Verso 7",
+    "family": "Verso",
+    "techLevel": "Normal",
+    "shellTypes": ["IIC","ITE"]
+  },
+  {
+    "productName": "Verso 9",
+    "family": "Verso",
+    "techLevel": "Top",
+    "shellTypes": ["IIC","CIC","MIH","ITC","ITE"]
+  },
+  {
+    "productName": "Verso 5",
+    "family": "Verso",
+    "techLevel": "Budget",
+    "shellTypes": ["IIC","CIC","MIH","ITC","ITE"]
+  },
+  {
+    "productName": "Alera 9",
+    "family": "Alera",
+    "techLevel": "Top",
+    "shellTypes": ["IIC","CIC","MIH","ITC","ITE"]
+  },
+  {
+    "productName": "Alera 7",
+    "family": "Alera",
+    "techLevel": "Normal",
+    "shellTypes": ["IIC","CIC","MIH","ITC","ITE"]
+  },
+  {
+    "productName": "Alera 5",
+    "family": "Alera",
+    "techLevel": "Budget",
+    "shellTypes": ["IIC","CIC","MIH","ITC","ITE"]
+  },
+  {
+    "productName": "Alera TS 5",
+    "family": "Alera",
+    "techLevel": "Budget",
+    "shellTypes": ["CIC","MIH","ITC","ITE"]
+  }
+]

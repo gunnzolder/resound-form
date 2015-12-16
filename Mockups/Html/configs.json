@@ -1,0 +1,266 @@
+[
+  {
+    "configName": "IIC Configuration",
+    "family": "LiNX2",
+    "techLevel": "Top",
+    "shellType": "IIC"
+  },
+  {
+    "configName": "CIC Configuration",
+    "family": "LiNX2",
+    "techLevel": "Top",
+    "shellType": "CIC"
+  },
+  {
+    "configName": "MIH Configuration",
+    "family": "LiNX2",
+    "techLevel": "Top",
+    "shellType": "MIH"
+  },
+  {
+    "configName": "ITC Configuration",
+    "family": "LiNX2",
+    "techLevel": "Top",
+    "shellType": "ITC"
+  },
+  {
+    "configName": "ITE Configuration",
+    "family": "LiNX2",
+    "techLevel": "Top",
+    "shellType": "ITE"
+  },
+  {
+    "configName": "IIC Configuration",
+    "family": "LiNX2",
+    "techLevel": "Normal",
+    "shellType": "IIC"
+  },
+  {
+    "configName": "CIC Configuration",
+    "family": "LiNX2",
+    "techLevel": "Normal",
+    "shellType": "CIC"
+  },
+  {
+    "configName": "MIH Configuration",
+    "family": "LiNX2",
+    "techLevel": "Normal",
+    "shellType": "MIH"
+  },
+  {
+    "configName": "ITC Configuration",
+    "family": "LiNX2",
+    "techLevel": "Normal",
+    "shellType": "ITC"
+  },
+  {
+    "configName": "ITE Configuration",
+    "family": "LiNX2",
+    "techLevel": "Normal",
+    "shellType": "ITE"
+  },
+  {
+    "configName": "IIC Configuration",
+    "family": "Enzo2",
+    "techLevel": "Top",
+    "shellType": "IIC"
+  },
+  {
+    "configName": "CIC Configuration",
+    "family": "Enzo2",
+    "techLevel": "Top",
+    "shellType": "CIC"
+  },
+  {
+    "configName": "MIH Configuration",
+    "family": "Enzo2",
+    "techLevel": "Top",
+    "shellType": "MIH"
+  },
+  {
+    "configName": "ITC Configuration",
+    "family": "Enzo2",
+    "techLevel": "Top",
+    "shellType": "ITC"
+  },
+  {
+    "configName": "ITE Configuration",
+    "family": "Enzo2",
+    "techLevel": "Top",
+    "shellType": "ITE"
+  },
+  {
+    "configName": "IIC Configuration",
+    "family": "Enzo2",
+    "techLevel": "Normal",
+    "shellType": "IIC"
+  },
+  {
+    "configName": "CIC Configuration",
+    "family": "Enzo2",
+    "techLevel": "Normal",
+    "shellType": "CIC"
+  },
+  {
+    "configName": "IIC Configuration",
+    "family": "Enzo2",
+    "techLevel": "Budget",
+    "shellType": "IIC"
+  },
+  {
+    "configName": "CIC Configuration",
+    "family": "Enzo2",
+    "techLevel": "Budget",
+    "shellType": "CIC"
+  },
+  {
+    "configName": "MIH Configuration",
+    "family": "Enzo2",
+    "techLevel": "Budget",
+    "shellType": "MIH"
+  },
+  {
+    "configName": "ITC Configuration",
+    "family": "Enzo2",
+    "techLevel": "Budget",
+    "shellType": "ITC"
+  },
+  {
+    "configName": "ITE Configuration",
+    "family": "Enzo2",
+    "techLevel": "Budget",
+    "shellType": "ITE"
+  },
+  {
+    "configName": "IIC Configuration",
+    "family": "Verso",
+    "techLevel": "Top",
+    "shellType": "IIC"
+  },
+  {
+    "configName": "CIC Configuration",
+    "family": "Verso",
+    "techLevel": "Top",
+    "shellType": "CIC"
+  },
+  {
+    "configName": "MIH Configuration",
+    "family": "Verso",
+    "techLevel": "Top",
+    "shellType": "MIH"
+  },
+  {
+    "configName": "ITC Configuration",
+    "family": "Verso",
+    "techLevel": "Top",
+    "shellType": "ITC"
+  },
+  {
+    "configName": "IIC Configuration",
+    "family": "Verso",
+    "techLevel": "Budget",
+    "shellType": "IIC"
+  },
+  {
+    "configName": "CIC Configuration",
+    "family": "Verso",
+    "techLevel": "Budget",
+    "shellType": "CIC"
+  },
+  {
+    "configName": "MIH Configuration",
+    "family": "Verso",
+    "techLevel": "Budget",
+    "shellType": "MIH"
+  },
+  {
+    "configName": "ITC Configuration",
+    "family": "Verso",
+    "techLevel": "Budget",
+    "shellType": "ITC"
+  },
+  {
+    "configName": "IIC Configuration",
+    "family": "Alera",
+    "techLevel": "Normal",
+    "shellType": "IIC"
+  },
+  {
+    "configName": "CIC Configuration",
+    "family": "Alera",
+    "techLevel": "Normal",
+    "shellType": "CIC"
+  },
+  {
+    "configName": "MIH Configuration",
+    "family": "Alera",
+    "techLevel": "Normal",
+    "shellType": "MIH"
+  },
+  {
+    "configName": "ITC Configuration",
+    "family": "Alera",
+    "techLevel": "Normal",
+    "shellType": "ITC"
+  },
+  {
+    "configName": "ITE Configuration",
+    "family": "Alera",
+    "techLevel": "Normal",
+    "shellType": "ITE"
+  },
+  {
+    "configName": "IIC Configuration",
+    "family": "Alera",
+    "techLevel": "Budget",
+    "shellType": "IIC"
+  },
+  {
+    "configName": "CIC Configuration",
+    "family": "Alera",
+    "techLevel": "Budget",
+    "shellType": "CIC"
+  },
+  {
+    "configName": "MIH Configuration",
+    "family": "Alera",
+    "techLevel": "Budget",
+    "shellType": "MIH"
+  },
+  {
+    "configName": "ITC Configuration",
+    "family": "Alera",
+    "techLevel": "Budget",
+    "shellType": "ITC"
+  },
+  {
+    "configName": "ITE Configuration",
+    "family": "Alera",
+    "techLevel": "Budget",
+    "shellType": "ITE"
+  },
+  {
+    "configName": "CIC Configuration",
+    "family": "Alera",
+    "techLevel": "Budget",
+    "shellType": "CIC"
+  },
+  {
+    "configName": "MIH Configuration",
+    "family": "Alera",
+    "techLevel": "Budget",
+    "shellType": "MIH"
+  },
+  {
+    "configName": "ITC Configuration",
+    "family": "Alera",
+    "techLevel": "Budget",
+    "shellType": "ITC"
+  },
+  {
+    "configName": "ITE Configuration",
+    "family": "Alera",
+    "techLevel": "Budget",
+    "shellType": "ITE"
+  }
+]

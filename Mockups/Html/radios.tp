@@ -1,0 +1,35 @@
+<h2 class="order-form__section__heading">Main Model</h2>
+
+<section class="order-form__input-block order-form__input-block--main-model order-form__input-block--families">
+    <h3>Family:</h3>
+
+    {{for families}}
+    <div class="order-form__input-block--main-model__control">
+        <input type="radio" name="family" id="family-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}">
+        <label for="family-{{:#data}}" class="order-form__input-block--main-model__label">{{:#data}}</label>
+
+    </div>
+    {{/for}}
+</section>
+
+<section class="order-form__input-block order-form__input-block--main-model order-form__input-block--technologies">
+    <h3>Technology:</h3>
+    {{for technologies}}
+    <div class="order-form__input-block--main-model__control">
+        <input type="radio" name="technology" id="technology-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}">
+        <label for="technology-{{:#data}}" class="order-form__input-block--main-model__label">{{:#data}}</label>
+
+    </div>
+    {{/for}}
+</section>
+
+<section class="order-form__input-block order-form__input-block--main-model order-form__input-block--shell-types">
+    <h3>Shell type:</h3>
+    {{for shellTypes}}
+    <div class="order-form__input-block--main-model__control">
+        <input type="radio" name="shell-type" id="shell-type-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}">
+        <label for="shell-type-{{:#data}}" class="order-form__input-block--main-model__label">{{:#data}}</label>
+
+    </div>
+    {{/for}}
+</section>

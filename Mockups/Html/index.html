@@ -169,60 +169,17 @@
             <div class="order-form grid-24">
                 <h1 class="order-form__heading">Online Order Form</h1>
 
-                <section class="order-form__section order-form__section--3cols clearfix">
-                    <h2 class="order-form__section__heading">Main Model</h2>
-
-                    <section class="order-form__input-block">
-                        <label for="order-form--family" class="order-form__label">Family:</label>
-                        <select name="family" id="order-form--family" class="order-form__select">
-                            <option value="alera" class="order-form__option">Alera</option>
-                            <option value="be" class="order-form__option">Be</option>
-                            <option value="dot" class="order-form__option">Dot</option>
-                            <option value="essence" class="order-form__option">Essence</option>
-                            <option value="lex" class="order-form__option">Lex</option>
-                            <option value="linx" class="order-form__option">LINX</option>
-                            <option value="live" class="order-form__option">Live</option>
-                            <option value="sparx" class="order-form__option">Sparx</option>
-                            <option value="vea" class="order-form__option">Vea</option>
-                            <option value="verso" class="order-form__option">Verso</option>
-                        </select>
-                    </section>
-
-                    <section class="order-form__input-block">
-                        <label for="order-form--technology" class="order-form__label">Technology:</label>
-                        <select name="technology" id="order-form--technology" class="order-form__select">
-                            <option value="5" class="order-form__option">5</option>
-                            <option value="7" class="order-form__option">7</option>
-                            <option value="9" class="order-form__option">9</option>
-                        </select>
-                    </section>
-
-                    <section class="order-form__input-block">
-
-                        <label for="order-form--shell-type" class="order-form__label">Shell type:</label>
-                        <select name="shell-type" id="order-form--shell-type" class="order-form__select">
-                            <option value="full-shell" class="order-form__option">Full Shell</option>
-                            <option value="half-shell" class="order-form__option">Half Shell</option>
-                            <option value="canal" class="order-form__option">Canal</option>
-                            <option value="cic" class="order-form__option">CIC</option>
-                            <option value="Canal" class="order-form__option">Canal</option>
-                            <option value="Flex-Vent" class="order-form__option">Flex-Vent</option>
-                            <option value="Open fit" class="order-form__option">Open fit</option>
-                            <option value="Skeleton" class="order-form__option">Skeleton</option>
-                            <option value="Micro-Mold" class="order-form__option">Micro-Mold</option>
-                        </select>
-                    </section>
-                </section>
+                <section class="order-form__section order-form__section--3cols order-form__section--main-model clearfix"></section>
 
                 <section class="order-form__section clearfix">
                     <h2 class="order-form__section__heading">Select Side:</h2>
+
                     <section class="order-form__input-block order-form__input-block--side">
-                        <input type="radio" name="side" value="left" class="order-form__input" id="order-form__side--leftear"/>
-                        <label for="order-form__side--leftear" class="order-form__side__label">
+                        <input type="radio" name="side" value="right" class="order-form__input" id="order-form__side--rightear" />
+                        <label for="order-form__side--rightear" class="order-form__side__label">
                             <svg class="order-form__input-block__svg">
-                                <use class="ear--left" xlink:href="images/ear.svg#left"></use>
-                            </svg>
-                            Left
+                                <use class="ear--right" xlink:href="images/ear.svg#right"></use></svg>
+                            Right
                         </label>
                     </section>
 
@@ -236,21 +193,23 @@
                             Binaural
                         </label>
                     </section>
+
                     <section class="order-form__input-block order-form__input-block--side">
-                        <input type="radio" name="side" value="right" class="order-form__input" id="order-form__side--rightear" />
-                        <label for="order-form__side--rightear" class="order-form__side__label">
+                        <input type="radio" name="side" value="left" class="order-form__input" id="order-form__side--leftear"/>
+                        <label for="order-form__side--leftear" class="order-form__side__label">
                             <svg class="order-form__input-block__svg">
-                                <use class="ear--right" xlink:href="images/ear.svg#right"></use></svg>
-                            Right
+                                <use class="ear--left" xlink:href="images/ear.svg#left"></use>
+                            </svg>
+                            Left
                         </label>
                     </section>
                 </section>
 
                 <section class="order-form__section clearfix" id="order-form__section--details">
                     <h2 class="order-form__section__heading">Details:</h2>
-                    <div class="order-form__control-group clearfix order-form__control-group--left">
+                    <div class="order-form__control-group clearfix order-form__control-group--right ">
 
-                        <h3 class="order-form__control-group__header order-form__control-group__header--left">Left</h3>
+                        <h3 class="order-form__control-group__header order-form__control-group__header--right ">Right </h3>
 
                         <section class="order-form__input-block">
                             <label for="coupling-left" class="order-form__label"> Coupling</label>
@@ -276,10 +235,10 @@
                         </section>
                     </div>
 
-                    <div class="order-form__control-group clearfix order-form__control-group--right order-form__control-group--disabled">
-                        <h3 class="order-form__control-group__header order-form__control-group__header--right">Right</h3>
+                    <div class="order-form__control-group clearfix order-form__control-group--left order-form__control-group--disabled">
+                        <h3 class="order-form__control-group__header order-form__control-group__header--left ">Left </h3>
                         <div class="order-form__control-group__copy-values">
-                            <label class="order-form__label"><input checked type="checkbox"/> Same as left</label>
+                            <label class="order-form__label"><input checked type="checkbox"/> Same as right</label>
                         </div>
                         <section class="order-form__input-block">
                             <label for="coupling-right" class="order-form__label"> Coupling</label>
@@ -310,9 +269,9 @@
                 <section class="order-form__section clearfix">
                     <h2 class="order-form__section__heading">Color:</h2>
 
-                    <div class="order-form__control-group clearfix order-form__control-group--left">
+                    <div class="order-form__control-group clearfix order-form__control-group--right ">
 
-                        <h3 class="order-form__control-group__header order-form__control-group__header--left">Left</h3>
+                        <h3 class="order-form__control-group__header order-form__control-group__header--right ">Right </h3>
                         <section class="order-form__input-block order-form__color">
 
                             <input checked type="radio" name="color-left" id="color-01-left" value="white" class="order-form__input order-form__color__input" />
@@ -365,10 +324,10 @@
 
                     </div>
 
-                    <div class="order-form__control-group clearfix order-form__control-group--right order-form__control-group--disabled">
-                        <h3 class="order-form__control-group__header order-form__control-group__header--right">Right</h3>
+                    <div class="order-form__control-group clearfix order-form__control-group--left order-form__control-group--disabled">
+                        <h3 class="order-form__control-group__header order-form__control-group__header--left ">Left </h3>
                         <div class="order-form__control-group__copy-values">
-                            <label class="order-form__label"><input checked type="checkbox"/> Same as left</label>
+                            <label class="order-form__label"><input checked type="checkbox"/> Same as right</label>
                         </div>
                         <section class="order-form__input-block order-form__color">
 
@@ -427,9 +386,9 @@
 
                 <section class="order-form__section clearfix" id="order-form__section--audiogram">
                     <h2 class="order-form__section__heading">Audiogram:</h2>
-                    <div class="order-form__control-group clearfix order-form__control-group--left">
+                    <div class="order-form__control-group clearfix order-form__control-group--right ">
 
-                        <h3 class="order-form__control-group__header order-form__control-group__header--left">Left</h3>
+                        <h3 class="order-form__control-group__header order-form__control-group__header--right ">Right </h3>
                         <svg class="order-form__section--audiogram__svg" viewBox="0 0 400 300">
                             <use class="audiogram-grid" xlink:href="images/graph.svg#grid"></use>
                             <use class="ear--left" xlink:href="images/graph.svg#graph2"></use>
@@ -437,10 +396,10 @@
 
                     </div>
 
-                    <div class="order-form__control-group clearfix order-form__control-group--right order-form__control-group--disabled">
-                        <h3 class="order-form__control-group__header order-form__control-group__header--right">Right</h3>
+                    <div class="order-form__control-group clearfix order-form__control-group--left order-form__control-group--disabled">
+                        <h3 class="order-form__control-group__header order-form__control-group__header--left ">Left </h3>
                         <div class="order-form__control-group__copy-values">
-                            <label class="order-form__label"><input checked type="checkbox"/> Same as left</label>
+                            <label class="order-form__label"><input checked type="checkbox"/> Same as right</label>
                         </div>
 
                         <svg class="order-form__section--audiogram__svg" viewBox="0 0 400 300">
@@ -491,8 +450,55 @@
          </div>
     </div>
 </div>
+
+<script type="text/json" id="someUniqueDataId">[{"configName": "IIC Configuration", "family": "LiNX2", "techLevel": "Top", "shellType": "IIC"}, {"configName": "CIC Configuration", "family": "LiNX2", "techLevel": "Top", "shellType": "CIC"}, {"configName": "MIH Configuration", "family": "LiNX2", "techLevel": "Top", "shellType": "MIH"}, {"configName": "ITC Configuration", "family": "LiNX2", "techLevel": "Top", "shellType": "ITC"}, {"configName": "ITE Configuration", "family": "LiNX2", "techLevel": "Top", "shellType": "ITE"}, {"configName": "IIC Configuration", "family": "LiNX2", "techLevel": "Normal", "shellType": "IIC"}, {"configName": "CIC Configuration", "family": "LiNX2", "techLevel": "Normal", "shellType": "CIC"}, {"configName": "MIH Configuration", "family": "LiNX2", "techLevel": "Normal", "shellType": "MIH"}, {"configName": "ITC Configuration", "family": "LiNX2", "techLevel": "Normal", "shellType": "ITC"}, {"configName": "ITE Configuration", "family": "LiNX2", "techLevel": "Normal", "shellType": "ITE"}, {"configName": "IIC Configuration", "family": "Enzo2", "techLevel": "Top", "shellType": "IIC"}, {"configName": "CIC Configuration", "family": "Enzo2", "techLevel": "Top", "shellType": "CIC"}, {"configName": "MIH Configuration", "family": "Enzo2", "techLevel": "Top", "shellType": "MIH"}, {"configName": "ITC Configuration", "family": "Enzo2", "techLevel": "Top", "shellType": "ITC"}, {"configName": "ITE Configuration", "family": "Enzo2", "techLevel": "Top", "shellType": "ITE"}, {"configName": "IIC Configuration", "family": "Enzo2", "techLevel": "Normal", "shellType": "IIC"}, {"configName": "CIC Configuration", "family": "Enzo2", "techLevel": "Normal", "shellType": "CIC"}, {"configName": "IIC Configuration", "family": "Enzo2", "techLevel": "Budget", "shellType": "IIC"}, {"configName": "CIC Configuration", "family": "Enzo2", "techLevel": "Budget", "shellType": "CIC"}, {"configName": "MIH Configuration", "family": "Enzo2", "techLevel": "Budget", "shellType": "MIH"}, {"configName": "ITC Configuration", "family": "Enzo2", "techLevel": "Budget", "shellType": "ITC"}, {"configName": "ITE Configuration", "family": "Enzo2", "techLevel": "Budget", "shellType": "ITE"}, {"configName": "IIC Configuration", "family": "Verso", "techLevel": "Top", "shellType": "IIC"}, {"configName": "CIC Configuration", "family": "Verso", "techLevel": "Top", "shellType": "CIC"}, {"configName": "MIH Configuration", "family": "Verso", "techLevel": "Top", "shellType": "MIH"}, {"configName": "ITC Configuration", "family": "Verso", "techLevel": "Top", "shellType": "ITC"}, {"configName": "ITE Configuration", "family": "Verso", "techLevel": "Top", "shellType": "ITE"}, {"configName": "IIC Configuration", "family": "Verso", "techLevel": "Budget", "shellType": "IIC"}, {"configName": "CIC Configuration", "family": "Verso", "techLevel": "Budget", "shellType": "CIC"}, {"configName": "MIH Configuration", "family": "Verso", "techLevel": "Budget", "shellType": "MIH"}, {"configName": "ITC Configuration", "family": "Verso", "techLevel": "Budget", "shellType": "ITC"}, {"configName": "ITE Configuration", "family": "Verso", "techLevel": "Budget", "shellType": "ITE"}, {"configName": "IIC Configuration", "family": "Alera", "techLevel": "Normal", "shellType": "IIC"}, {"configName": "CIC Configuration", "family": "Alera", "techLevel": "Normal", "shellType": "CIC"}, {"configName": "MIH Configuration", "family": "Alera", "techLevel": "Normal", "shellType": "MIH"}, {"configName": "ITC Configuration", "family": "Alera", "techLevel": "Normal", "shellType": "ITC"}, {"configName": "ITE Configuration", "family": "Alera", "techLevel": "Normal", "shellType": "ITE"}, {"configName": "IIC Configuration", "family": "Alera", "techLevel": "Budget", "shellType": "IIC"}, {"configName": "CIC Configuration", "family": "Alera", "techLevel": "Budget", "shellType": "CIC"}, {"configName": "MIH Configuration", "family": "Alera", "techLevel": "Budget", "shellType": "MIH"}, {"configName": "ITC Configuration", "family": "Alera", "techLevel": "Budget", "shellType": "ITC"}, {"configName": "ITE Configuration", "family": "Alera", "techLevel": "Budget", "shellType": "ITE"}, {"configName": "CIC Configuration", "family": "Alera", "techLevel": "Budget", "shellType": "CIC"}, {"configName": "MIH Configuration", "family": "Alera", "techLevel": "Budget", "shellType": "MIH"}, {"configName": "ITC Configuration", "family": "Alera", "techLevel": "Budget", "shellType": "ITC"}, {"configName": "ITE Configuration", "family": "Alera", "techLevel": "Budget", "shellType": "ITE"} ]</script>
+
+<script type="text/x-jsrender" id="someUniqueTemplateId">
+
+    <h2 class="order-form__section__heading">Main Model</h2>
+
+<section class="order-form__input-block order-form__input-block--main-model order-form__input-block--families">
+    <h3>Family:</h3>
+
+    {{for families}}
+    <div class="order-form__input-block--main-model__control">
+        <input type="radio" name="family" id="family-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}">
+        <label for="family-{{:#data}}" class="order-form__input-block--main-model__label">{{:#data}}</label>
+
+    </div>
+    {{/for}}
+</section>
+
+<section class="order-form__input-block order-form__input-block--main-model order-form__input-block--technologies">
+    <h3>Technology:</h3>
+    {{for technologies}}
+    <div class="order-form__input-block--main-model__control">
+        <input type="radio" name="technology" id="technology-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}">
+        <label for="technology-{{:#data}}" class="order-form__input-block--main-model__label">{{:#data}}</label>
+
+    </div>
+    {{/for}}
+</section>
+
+<section class="order-form__input-block order-form__input-block--main-model order-form__input-block--shell-types">
+    <h3>Shell type:</h3>
+    {{for shellTypes}}
+    <div class="order-form__input-block--main-model__control">
+        <input type="radio" name="shell-type" id="shell-type-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}">
+        <label for="shell-type-{{:#data}}" class="order-form__input-block--main-model__label">{{:#data}}</label>
+
+    </div>
+    {{/for}}
+</section>
+
+
+</script>
+
+
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 <script src="script.js"></script>
+<script src="radiocontrols.js"></script>
 
 </body>
 </html>
