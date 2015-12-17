@@ -11513,6 +11513,7 @@ div.eBusiness .productDescription {
   box-sizing: border-box;
   padding: 16px;
   float: left;
+  width: 100%;
 }
 .order-form__input-block__svg {
   width: 30px;
@@ -11525,16 +11526,54 @@ div.eBusiness .productDescription {
 .order-form__input-block__svg use.ear--right {
   fill: #d71920;
 }
-.order-form__input-block--main-model__label {
-  opacity: .6;
+.order-form__input-block--main-model {
+  padding-left: 0;
+}
+.order-form__input-block--main-model__control:first-of-type label {
+  border-radius: 5px 5px 0 0;
+}
+.order-form__input-block--main-model__control:last-child label {
+  border-bottom: 1px solid #d0d0d0;
+  border-radius: 0 0 5px 5px;
+}
+.order-form__input-block--main-model input {
+  display: none;
+}
+.order-form__input-block--main-model input ~ label {
+  display: block;
+  line-height: 36px;
+  padding-left: 10px;
+  border: 1px solid #d0d0d0;
+  background: #fdfdfd;
+  position: relative;
+  color: #ccc;
+  margin: 0;
+  border-bottom: 0;
+  cursor: pointer;
+  transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+.order-form__input-block--main-model input:checked ~ label::after {
+  content: "✓";
+  position: absolute;
+  line-height: 36px;
+  top: 0;
+  right: 10px;
 }
 .order-form__input-block--main-model input[data-available] ~ label {
-  opacity: 1;
   font-weight: bold;
+  color: #666;
+}
+.order-form__input-block--main-model input:checked ~ label {
+  background: rgba(235, 235, 235, 0.8);
+  color: #333;
 }
 .order-form__input-block--side {
   width: 80px;
   text-align: center;
+  padding-left: 0;
 }
 .order-form__input-block--side label.order-form__side__label {
   opacity: .6;
@@ -11543,6 +11582,12 @@ div.eBusiness .productDescription {
   text-align: center;
   width: 60px;
   border-radius: 4px;
+  margin: 0;
+  border: 1px solid transparent;
+  transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -webkit-transition: all .2s ease;
 }
 .order-form__input-block--side .order-form__input {
   display: none;
@@ -11592,9 +11637,6 @@ div.eBusiness .productDescription {
   margin-left: -15px;
   border: 2px solid #FFF;
 }
-.order-form__section--3cols .order-form__input-block {
-  width: 33%;
-}
 .order-form__section--audiogram__svg {
   display: block;
   width: 90%;
@@ -11616,6 +11658,8 @@ div.eBusiness .productDescription {
   margin: 0 16px 16px 0;
   border-top-width: 20px;
   width: 100%;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
 }
 .order-form__control-group__header {
   position: absolute;
@@ -11664,6 +11708,11 @@ div.eBusiness .productDescription {
 .order-form__button--next {
   float: right;
 }
+@media (min-width: 568px) {
+  .order-form__section--3cols .order-form__input-block {
+    width: 33%;
+  }
+}
 @media (min-width: 768px) {
   .order-form {
     padding: 0 16px;
@@ -11673,10 +11722,9 @@ div.eBusiness .productDescription {
     width: 49%;
     float: left;
     box-sizing: border-box;
-    margin: 0 1% 16px 0;
+    margin: 0 0 16px 0;
   }
-  .order-form__control-group--left:not(.order-form____control-group--single) {
-    margin-left: 1%;
-    margin-right: 0;
+  .order-form__control-group--right:not(.order-form____control-group--single) {
+    margin-right: 2%;
   }
 }

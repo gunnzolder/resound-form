@@ -25,21 +25,21 @@
 
     function showSide(e) {
         console.log(e.target.value);
-        if (e.target.value == 'right') {
-            $('.order-form__control-group--left').hide();
-            $('.order-form__control-group--right').addClass('order-form____control-group--single').show();
+        if (e.target.value == 'left') {
+            $('.order-form__control-group--right').hide();
+            $('.order-form__control-group--left').show();
             var copyValuesControls = $('.order-form__control-group__copy-values');
             console.log(copyValuesControls);
             $.each(copyValuesControls , function(){
                 $(this).find('input').trigger('click', false);
                 $(this).hide();
             });
-        } else if (e.target.value == 'left') {
-            $('.order-form__control-group--right').hide();
-            $('.order-form__control-group--left').show();
+        } else if (e.target.value == 'right') {
+            $('.order-form__control-group--left').hide();
+            $('.order-form__control-group--right').show();
         } else {
-            $('.order-form__control-group--right').removeClass('order-form____control-group--single').show();
             $('.order-form__control-group--left').show();
+            $('.order-form__control-group--right').show();
             var copyValuesControls = $('.order-form__control-group__copy-values');
             $.each(copyValuesControls , function(){
                 $(this).find('input').prop('checked', true);

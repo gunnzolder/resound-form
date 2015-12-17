@@ -246,11 +246,11 @@
     "shellType": "CIC"
   },
   {
-    "configName": "MIH Configuration",
-    "family": "Alera",
-    "techLevel": "Budget",
-    "shellType": "MIH"
-  },
+  "configName": "MIH Configuration",
+  "family": "Alera",
+  "techLevel": "Budget",
+  "shellType": "MIH"
+},
   {
     "configName": "ITC Configuration",
     "family": "Alera",
@@ -260,6 +260,24 @@
   {
     "configName": "ITE Configuration",
     "family": "Alera",
+    "techLevel": "Budget",
+    "shellType": "ITE"
+  },
+  {
+    "configName": "MIH Configuration",
+    "family": "Legend",
+    "techLevel": "Budget",
+    "shellType": "MIH"
+  },
+  {
+    "configName": "ITC Configuration",
+    "family": "Ally",
+    "techLevel": "Budget",
+    "shellType": "ITC"
+  },
+  {
+    "configName": "ITE Configuration",
+    "family": "Promise",
     "techLevel": "Budget",
     "shellType": "ITE"
   }

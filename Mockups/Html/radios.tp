@@ -5,7 +5,7 @@
 
     {{for families}}
     <div class="order-form__input-block--main-model__control">
-        <input type="radio" name="family" id="family-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}">
+        <input type="radio" name="family" id="family-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}" data-available="true">
         <label for="family-{{:#data}}" class="order-form__input-block--main-model__label">{{:#data}}</label>
 
     </div>
@@ -16,7 +16,7 @@
     <h3>Technology:</h3>
     {{for technologies}}
     <div class="order-form__input-block--main-model__control">
-        <input type="radio" name="technology" id="technology-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}">
+        <input type="radio" name="technology" id="technology-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}" data-available="true">
         <label for="technology-{{:#data}}" class="order-form__input-block--main-model__label">{{:#data}}</label>
 
     </div>
@@ -27,7 +27,7 @@
     <h3>Shell type:</h3>
     {{for shellTypes}}
     <div class="order-form__input-block--main-model__control">
-        <input type="radio" name="shell-type" id="shell-type-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}">
+        <input type="radio" name="shell-type" id="shell-type-{{:#data}}" class="order-form__input-block--main-model__label" value="{{:#data}}" data-available="true">
         <label for="shell-type-{{:#data}}" class="order-form__input-block--main-model__label">{{:#data}}</label>
 
     </div>

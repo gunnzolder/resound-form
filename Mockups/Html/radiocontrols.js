@@ -131,10 +131,9 @@
                 var changedConfig = data[indexes[0]].configName;
                 switchControls(changedConfig, filterValues);
             }
+
         });
     }
-
-
 
     /* SWITCH THE CONTROLS BELOW */
     function switchControls(configName, filterValues){
@@ -154,6 +153,5 @@
     /* TRIGGER THE STUFF */
     renderControls(FILTER_OPTIONS);
     handleDependencies(FILTER_OPTIONS);
-
 
 })(jQuery);

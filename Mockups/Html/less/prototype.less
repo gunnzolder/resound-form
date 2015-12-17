@@ -14,6 +14,7 @@
     box-sizing: border-box;
     padding: 16px;
     float: left;
+    width: 100%;
 
 
     &__svg {
@@ -29,13 +30,57 @@
     }
 
     &--main-model {
-      &__label {
-        opacity: .6;
+      padding-left: 0;
+      &__control {
+        &:first-of-type label {
+          border-radius: 5px 5px 0 0;
+        }
+        &:last-child label {
+          border-bottom: 1px solid #d0d0d0;
+          border-radius: 0 0 5px 5px;
+        }
       }
+
+
       input {
+        display: none;
+        ~ label {
+          display: block;
+          line-height: 36px;
+          padding-left: 10px;
+          border: 1px solid #d0d0d0;
+          background: #fdfdfd;
+          position: relative;
+          color: #ccc;
+          margin: 0;
+          border-bottom: 0;
+          cursor: pointer;
+
+          transition:         all .2s ease;
+          -o-transition:      all .2s ease;
+          -moz-transition:    all .2s ease;
+          -webkit-transition: all .2s ease;
+        }
+        &:checked {
+          & ~ label {
+            &::after {
+              content: "✓";
+              position: absolute;
+              line-height: 36px;
+              top: 0;
+              right: 10px;
+            }
+          }
+        }
         &[data-available] ~ label {
-          opacity:1;
           font-weight: bold;
+          color: #666;
+        }
+        &:checked {
+          & ~ label {
+            background: rgba(235,235,235,.8);
+            color: #333;
+          }
         }
       }
     }
@@ -43,6 +88,7 @@
     &--side {
       width: 80px;
       text-align: center;
+      padding-left: 0;
       label.order-form__side__label {
         opacity: .6;
         display: block;
@@ -50,6 +96,13 @@
         text-align: center;
         width: 60px;
         border-radius: 4px;
+        margin: 0;
+        border: 1px solid transparent;
+
+        transition:         all .2s ease;
+        -o-transition:      all .2s ease;
+        -moz-transition:    all .2s ease;
+        -webkit-transition: all .2s ease;
       }
 
       .order-form__input {
@@ -62,7 +115,6 @@
         }
       }
     }
-
 
   }
   &__color {
@@ -110,12 +162,6 @@
   }
   &__section {
 
-    &--3cols {
-      .order-form__input-block {
-        width: 33%;
-      }
-    }
-
     &--audiogram {
       &__svg {
         display: block;
@@ -143,6 +189,9 @@
     margin: 0 16px 16px 0;
     border-top-width: 20px;
     width: 100%;
+
+    transition:                 all .5s ease;
+    -webkit-transition:         all .5s ease;
 
     &__header {
       position: absolute;
@@ -202,23 +251,30 @@
 
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 568px) {
+  .order-form {
+    &__section {
+      &--3cols {
+        .order-form__input-block {
+          width: 33%;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 768px) {
   .order-form {
-
     padding: 0 16px;
     box-sizing: border-box;
     &__control-group {
       width: 49%;
       float: left;
       box-sizing: border-box;
-      margin: 0 1% 16px 0;
-      &--left:not(.order-form____control-group--single) {
-        margin-left: 1%;
-        margin-right: 0;
+      margin: 0 0 16px 0;
+      &--right:not(.order-form____control-group--single) {
+        margin-right: 2%;
       }
     }
-
   }
 }
