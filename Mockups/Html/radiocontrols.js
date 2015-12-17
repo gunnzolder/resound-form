@@ -10,8 +10,8 @@
     var FILTER_OPTIONS = {
         dataId: "someUniqueDataId",
         templateId : "someUniqueTemplateId",
-        target : ".order-form__section--main-model",
-        inputBlock : ".order-form__input-block",
+        target : ".configurator__section--main-model",
+        inputBlock : ".configurator__input-block",
         highlightAttribute : "data-available"
     }
 

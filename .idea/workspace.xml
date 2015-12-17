@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4997d30-618b-4094-a7cc-303de9d7f70a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mockups/Html/configs.json" afterPath="$PROJECT_DIR$/Mockups/Html/configs.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mockups/Html/index.html" afterPath="$PROJECT_DIR$/Mockups/Html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mockups/Html/less/prototype.less" afterPath="$PROJECT_DIR$/Mockups/Html/less/prototype.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mockups/Html/radiocontrols.js" afterPath="$PROJECT_DIR$/Mockups/Html/radiocontrols.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mockups/Html/radios.tp" afterPath="$PROJECT_DIR$/Mockups/Html/radios.tp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mockups/Html/script.js" afterPath="$PROJECT_DIR$/Mockups/Html/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mockups/Html/style.css" afterPath="$PROJECT_DIR$/Mockups/Html/style.css" />
     </list>
     <ignored path="resound.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,15 +29,9 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mockups/Html/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.7777777">
-              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-              <folding>
-                <element signature="e#166#238#0" expanded="false" />
-                <element signature="e#267#636#0" expanded="false" />
-                <element signature="e#763#833#0" expanded="false" />
-                <element signature="e#1995#2063#0" expanded="false" />
-                <element signature="e#2090#2637#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-1.981132">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,28 +39,26 @@
       <file leaf-file-name="radiocontrols.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mockups/Html/radiocontrols.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-38.666668">
-              <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.6981132">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#478#2109#0" expanded="false" />
-                <element signature="e#2149#2411#0" expanded="false" />
-                <element signature="e#2453#2779#0" expanded="false" />
-                <element signature="e#2824#3174#0" expanded="false" />
-                <element signature="e#3243#3628#0" expanded="false" />
+                <element signature="e#482#2113#0" expanded="false" />
+                <element signature="e#2153#2415#0" expanded="false" />
+                <element signature="e#2457#2783#0" expanded="false" />
+                <element signature="e#2828#3178#0" expanded="false" />
+                <element signature="e#3247#3632#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prototype.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="prototype.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mockups/Html/less/prototype.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.117647">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-              <folding>
-                <element signature="e#2450#3347#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.846678">
+              <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mockups/Html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65608466">
-              <caret line="453" column="4661" selection-start-line="453" selection-start-column="4661" selection-end-line="453" selection-end-column="4661" />
+            <state vertical-scroll-proportion="-50.96104">
+              <caret line="485" column="62" selection-start-line="485" selection-start-column="62" selection-end-line="485" selection-end-column="62" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -174,11 +162,11 @@
         <option value="$PROJECT_DIR$/Mockups/Html/products.json" />
         <option value="$PROJECT_DIR$/Mockups/Html/images/ear.svg" />
         <option value="$PROJECT_DIR$/Mockups/Html/radios.tp" />
+        <option value="$PROJECT_DIR$/Mockups/Html/configs.json" />
+        <option value="$PROJECT_DIR$/Mockups/Html/index.html" />
         <option value="$PROJECT_DIR$/Mockups/Html/radiocontrols.js" />
         <option value="$PROJECT_DIR$/Mockups/Html/script.js" />
         <option value="$PROJECT_DIR$/Mockups/Html/less/prototype.less" />
-        <option value="$PROJECT_DIR$/Mockups/Html/configs.json" />
-        <option value="$PROJECT_DIR$/Mockups/Html/index.html" />
       </list>
     </option>
   </component>
@@ -188,8 +176,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -383,17 +371,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3069467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27181688" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1520548" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13373494" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -474,9 +462,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="e#2450#3347#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -553,9 +539,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="e#2450#3347#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -622,9 +606,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding>
-            <element signature="e#2450#3347#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -653,6 +635,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08490566">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -774,45 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mockups/Html/radiocontrols.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.666668">
-          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#478#2109#0" expanded="false" />
-            <element signature="e#2149#2411#0" expanded="false" />
-            <element signature="e#2453#2779#0" expanded="false" />
-            <element signature="e#2824#3174#0" expanded="false" />
-            <element signature="e#3243#3628#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mockups/Html/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7777777">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-          <folding>
-            <element signature="e#166#238#0" expanded="false" />
-            <element signature="e#267#636#0" expanded="false" />
-            <element signature="e#763#833#0" expanded="false" />
-            <element signature="e#1995#2063#0" expanded="false" />
-            <element signature="e#2090#2637#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mockups/Html/less/prototype.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.117647">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="e#2450#3347#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mockups/Html/configs.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.75">
@@ -823,11 +767,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Mockups/Html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65608466">
-          <caret line="453" column="4661" selection-start-line="453" selection-start-column="4661" selection-end-line="453" selection-end-column="4661" />
+        <state vertical-scroll-proportion="-50.96104">
+          <caret line="485" column="62" selection-start-line="485" selection-start-column="62" selection-end-line="485" selection-end-column="62" />
           <folding>
             <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mockups/Html/radiocontrols.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6981132">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#482#2113#0" expanded="false" />
+            <element signature="e#2153#2415#0" expanded="false" />
+            <element signature="e#2457#2783#0" expanded="false" />
+            <element signature="e#2828#3178#0" expanded="false" />
+            <element signature="e#3247#3632#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mockups/Html/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.981132">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mockups/Html/less/prototype.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.846678">
+          <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

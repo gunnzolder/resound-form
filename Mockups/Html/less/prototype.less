@@ -2,7 +2,7 @@
 @color-right: #d71920;
 
 
-.order-form {
+.configurator {
   &__heading {
     margin: 30px 0;
   }
@@ -89,7 +89,7 @@
       width: 80px;
       text-align: center;
       padding-left: 0;
-      label.order-form__side__label {
+      label.configurator__side__label {
         opacity: .6;
         display: block;
         padding: 10px;
@@ -105,7 +105,7 @@
         -webkit-transition: all .2s ease;
       }
 
-      .order-form__input {
+      .configurator__input {
         display: none;
         &:checked {
           ~ label {
@@ -123,9 +123,9 @@
     &__input {
       display: none;
       &:checked {
-        ~ .order-form__color__label {
+        ~ .configurator__color__label {
           opacity: 1;
-          .order-form__color__sample__image {
+          .configurator__color__sample__image {
             box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.4);
             transform: scale(1.1);
             transition: transform .2s ease;
@@ -227,13 +227,13 @@
 
     &--left {
       border-top-color: fade(@color-left, 20%);
-      .order-form__control-group__header {
+      .configurator__control-group__header {
         color: @color-left;
       }
     }
     &--right {
       border-top-color: fade(@color-right, 20%);
-      .order-form__control-group__header {
+      .configurator__control-group__header {
         color: @color-right;
       }
     }
@@ -252,10 +252,10 @@
 }
 
 @media (min-width: 568px) {
-  .order-form {
+  .configurator {
     &__section {
       &--3cols {
-        .order-form__input-block {
+        .configurator__input-block {
           width: 33%;
         }
       }
@@ -264,7 +264,7 @@
 }
 
 @media (min-width: 768px) {
-  .order-form {
+  .configurator {
     padding: 0 16px;
     box-sizing: border-box;
     &__control-group {
@@ -272,9 +272,10 @@
       float: left;
       box-sizing: border-box;
       margin: 0 0 16px 0;
-      &--right:not(.order-form____control-group--single) {
+      &--right:not(.configurator____control-group--single) {
         margin-right: 2%;
       }
     }
   }
 }
+
