@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="27px" viewBox="0 0 15 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ear-left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ear-colored" transform="translate(-63.000000, -1.000000)" fill="#0B6493" fill-rule="nonzero">
+            <g id="ear-left" transform="translate(63.000000, 0.000000)">
+                <g id="Group">
+                    <path d="M5.4,27.5 C4.7,27.5 4,27.4 3.3,27.1 C1.5,26.3 0.2,24.7 0.2,23.2 L2.4,23.2 C2.4,23.7 3,24.6 4.1,25.1 C4.8,25.4 6.2,25.7 7.7,24.3 C9.2,22.9 9.5,21.4 10,18.8 C10.3,17.4 10.7,15.6 11.3,13.4 C12.6,9.3 11.7,5.8 9.1,4.2 C6.8,2.6 3.7,3 1.5,5 L2.84217094e-14,3.4 C2.9,0.7 7.1,0.2 10.3,2.2 C13.9,4.4 15,8.8 13.5,13.9 C12.9,16 12.5,17.7 12.2,19.1 C11.6,21.8 11.2,23.8 9.3,25.7 C8.2,26.9 6.8,27.5 5.4,27.5 Z" id="Path"></path>
+                    <path d="M4.2,21 L3.7,19.4 C5.4,18.8 6,16.8 5.5,15.1 C5.3,14.4 4.5,12.2 1.6,12.8 L0.5,13 L0.7,11.9 C1.3,7.6 3.3,6.2 4.5,5.7 C5.9,5.1 7.5,5.4 8.7,6.4 C9.9,7.4 10.5,9.1 10.2,10.9 L8.6,10.6 C8.8,9.4 8.5,8.4 7.7,7.7 C7,7.1 6,7 5.1,7.3 C3.9,7.8 3,9.1 2.5,11.1 C5,11.1 6.6,12.8 7.2,14.7 C7.7,17 6.9,20 4.2,21 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

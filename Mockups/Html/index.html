@@ -177,8 +177,7 @@
                     <section class="configurator__input-block configurator__input-block--side">
                         <input type="radio" name="side" value="right" class="configurator__input" id="configurator__side--rightear" />
                         <label for="configurator__side--rightear" class="configurator__side__label">
-                            <svg class="configurator__input-block__svg">
-                                <use class="ear--right" xlink:href="images/ear.svg#right"></use></svg>
+                            <img class="configurator__input-block__svg" src="images/ear-right.svg" />
                             Right
                         </label>
                     </section>
@@ -186,10 +185,7 @@
                     <section class="configurator__input-block configurator__input-block--side">
                         <input checked type="radio" name="side" value="binaural" class="configurator__input" id="configurator__side--binaural"/>
                         <label for="configurator__side--binaural" class="configurator__side__label">
-                            <svg class="configurator__input-block__svg">
-                                <use class="ear--left" xlink:href="images/ear.svg#binaural-left"></use>
-                                <use class="ear--right" xlink:href="images/ear.svg#binaural-right"></use>
-                            </svg>
+                           <img class="configurator__input-block__svg" src="images/ear-binaural.svg" />
                             Binaural
                         </label>
                     </section>
@@ -197,9 +193,8 @@
                     <section class="configurator__input-block configurator__input-block--side">
                         <input type="radio" name="side" value="left" class="configurator__input" id="configurator__side--leftear"/>
                         <label for="configurator__side--leftear" class="configurator__side__label">
-                            <svg class="configurator__input-block__svg">
-                                <use class="ear--left" xlink:href="images/ear.svg#left"></use>
-                            </svg>
+                            
+                           <img class="configurator__input-block__svg" src="images/ear-left.svg" />
                             Left
                         </label>
                     </section>
@@ -390,8 +385,8 @@
 
                         <h3 class="configurator__control-group__header configurator__control-group__header--right ">Right </h3>
                         <svg class="configurator__section--audiogram__svg" viewBox="0 0 400 300">
-                            <use class="audiogram-grid" xlink:href="images/graph.svg#grid"></use>
-                            <use class="ear--left" xlink:href="images/graph.svg#graph2"></use>
+                            <use class="audiogram-grid" href="images/graph.svg#grid"></use>
+                            <use class="ear--left" href="images/graph.svg#graph2"></use>
                         </svg>
 
                     </div>
@@ -403,9 +398,9 @@
                         </div>
 
                         <svg class="configurator__section--audiogram__svg" viewBox="0 0 400 300">
-                            <use class="audiogram-grid" xlink:href="images/graph.svg#grid"></use>
+                            <use class="audiogram-grid" href="./images/graph.svg#grid"></use>
                             <!--<use class="ear&#45;&#45;right" xlink:href="images/graph.svg#graph1"></use>-->
-                            <use class="ear--right" xlink:href="images/graph.svg#graph2"></use>
+                            <use class="ear--right" href="./images/graph.svg#graph2"></use>
                         </svg>
 
                     </div>
